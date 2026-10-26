@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Da poluição à economia · ARDITI (protótipo)</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.k0{color:#a2a2a2}
+.k1{color:#d6d6d6}
+.k2{display:flex;gap:8px;align-items:center}
+.k3{background:#e7e7e7;align-self:stretch;display:flex;flex-direction:column;padding:24px 40px 24px 40px;align-items:flex-start;width:100%}
+.k4{display:flex;gap:8px;padding:4px 0px 4px 0px;justify-content:center;align-items:center}
+.k5{border:1px solid #3c3c3b;border-radius:32px;display:flex;flex-direction:column;gap:8px;padding:0px 16px 0px 16px;align-items:flex-start}
+.k6{display:flex;gap:8px}
+.k7{align-self:stretch;text-align:center}
+.k8{align-self:stretch;display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+.k9{border:1px solid #3c3c3b;display:flex;gap:8px;padding:14px 24px 14px 24px;justify-content:center;align-items:center}
+.ka{background:#e7e7e7;align-self:stretch;display:flex;flex-direction:column;gap:104px;padding:40px 40px 40px 40px;justify-content:center;align-items:center;height:526px;flex-shrink:0;width:100%}
+.kb{align-self:stretch}
+.kc{width:657px;max-width:100%;display:flex;flex-direction:column;gap:24px;align-items:flex-start}
+.kd{align-self:stretch;display:flex;flex-direction:column;gap:72px;justify-content:center;align-items:center;width:100%;padding:56px max(161px, calc((100% - 1190px) / 2)) 56px max(161px, calc((100% - 1190px) / 2))}
+.ke{flex:0 0 calc((100% - 48px) / 3);min-width:0;display:flex;flex-direction:column;gap:4px;align-items:flex-start;height:72px}
+.kf{flex:0 0 calc((100% - 48px) / 3);min-width:0;display:flex;flex-direction:column;gap:4px;align-items:flex-start}
+.kg{background:#f4f4f4;border-radius:16px;align-self:stretch;display:flex;gap:24px;flex-wrap:wrap;row-gap:32px;column-gap:24px;padding:32px 32px 32px 32px}
+.kh{align-self:stretch;display:flex;flex-direction:column;gap:32px;align-items:flex-start;width:100%;padding:0px max(40px, calc((100% - 1432px) / 2)) 32px max(40px, calc((100% - 1432px) / 2))}
+.ki{text-align:center}
+.kj{width:373px;max-width:100%;display:flex;flex-direction:column;gap:4px;align-items:center}
+.kk{color:#dddddd}
+.kl{background:#ffffff;border:1px solid #d6d6d6;border-radius:8px;align-self:stretch;display:flex;padding:0px 16px 0px 16px;justify-content:space-between;align-items:center;height:48px;flex-shrink:0}
+.km{flex:0 0 calc((100% - 24px) / 2);min-width:0;display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+.kn{flex:0 1 16px;min-width:0;height:16px;width:16px}
+.ko{flex:0 1 20px;min-width:0;height:20px;width:20px}
+.kp{background:#ffffff;border:1px solid #3c3c3b;border-radius:50%;flex:0 1 20px;min-width:0;height:20px}
+.kq{display:flex;gap:24px}
+.kr{flex:0 0 calc((100% - 24px) / 2);min-width:0;display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+.ks{background:#ffffff;border:1px solid #d6d6d6;border-radius:8px;align-self:stretch;display:flex;padding:12px 16px 12px 16px;justify-content:space-between;height:120px;flex-shrink:0}
+.kt{flex:0 1 946px;min-width:0;display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+.ku{align-self:stretch;display:flex;gap:24px;flex-wrap:wrap;row-gap:24px;column-gap:24px}
+.kv{display:flex;gap:12px;align-items:center}
+.kw{color:#ffffff}
+.kx{background:#3c3c3b;display:flex;gap:8px;padding:14px 24px 14px 24px;justify-content:center;align-items:center}
+.ky{width:946px;max-width:100%;display:flex;flex-direction:column;gap:24px;align-items:flex-start}
+.kz{background:#f4f4f4;align-self:stretch;display:flex;flex-direction:column;gap:24px;align-items:center;width:100%;padding:64px max(40px, calc((100% - 1432px) / 2)) 64px max(40px, calc((100% - 1432px) / 2))}
+.k10{background:#e7e7e7;flex:0 1 947px;min-width:0;display:flex;justify-content:center;align-items:center;height:480px}
+.k11{background:#e7e7e7;align-self:stretch;display:flex;justify-content:center;align-items:center;height:228px;flex-shrink:0}
+.k12{display:flex;flex-direction:column;gap:24px;align-items:flex-start}
+.k13{background:#f9f9f9;align-self:stretch;display:flex;flex-direction:column;padding:56px 0px 56px 0px;align-items:flex-start;width:100%}
+.k14{align-self:stretch;display:flex;flex-direction:column;gap:4px;align-items:flex-start}
+.k15{background:#e7e7e7;border-radius:8px;flex:0 1 120px;min-width:0;display:flex;justify-content:center;align-items:center;height:120px}
+.k16{display:flex;gap:16px}
+.k17{align-self:stretch;display:flex;flex-direction:column;gap:24px;align-items:flex-start;width:100%;padding:64px max(40px, calc((100% - 1432px) / 2)) 64px max(40px, calc((100% - 1432px) / 2))}
+.k18{flex:1 1 0;min-width:0}
+.k19{background:#ffffff;border:1px solid #3c3c3b;border-radius:16px;flex:1 1 0;min-width:0;display:flex;gap:8px;padding:32px 32px 32px 32px;justify-content:center}
+.k1a{background:#ffffff;border:1px solid #3c3c3b;border-radius:16px;flex:1 1 0;min-width:0;display:flex;gap:8px;padding:32px 32px 32px 32px;justify-content:center;align-self:stretch}
+.k1b{align-self:stretch;display:flex;gap:24px}
+.k1c{background:#ffffff;align-self:stretch;display:flex;flex-direction:column;gap:32px;align-items:flex-start;width:100%;padding:48px max(40px, calc((100% - 1432px) / 2)) 48px max(40px, calc((100% - 1432px) / 2))}
+.k1d{display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+.k1e{flex:0 1 24px;min-width:0;height:24px;width:24px}
+.k1f{display:flex;gap:6px;align-items:center}
+.k1g{flex:0 1 429px;min-width:0;display:flex;justify-content:space-between;align-items:center}
+.k1h{background:#f4f4f4;border-radius:16px;align-self:stretch;display:flex;padding:48px 48px 48px 48px;justify-content:space-between;align-items:center}
+.k1i{align-self:stretch;display:flex;flex-direction:column;gap:32px;align-items:flex-start;width:100%;padding:64px max(40px, calc((100% - 1432px) / 2)) 64px max(40px, calc((100% - 1432px) / 2))}
+.k1j{background:#ffffff;border-radius:32px;flex:0 1 40px;min-width:0;display:flex;flex-direction:column;gap:8px;padding:8px 8px 8px 8px;justify-content:center;align-items:center}
+.k1k{background:#ffffff;border-radius:40px;display:flex;gap:8px;padding:8px 16px 8px 16px;justify-content:center;align-items:center;height:40px}
+.k1l{display:flex;gap:4px;align-items:center}
+.k1m{background:#ffffff;border-radius:40px;display:flex;gap:8px;padding:8px 16px 8px 16px;align-items:center}
+.k1n{align-self:stretch;display:flex;justify-content:space-between;align-items:center}
+.k1o{align-self:stretch;display:flex;gap:4px;flex-wrap:wrap;row-gap:4px;column-gap:4px}
+.k1p{align-self:stretch;display:flex;gap:8px;align-items:center}
+.k1q{align-self:stretch;display:flex;flex-direction:column;gap:16px;align-items:flex-start}
+.k1r{align-self:stretch;display:flex;flex-direction:column;gap:24px;align-items:flex-start}
+.k1s{border:1px solid #3c3c3b;border-radius:32px;display:flex;gap:8px;padding:12px 32px 12px 32px;align-items:center;height:44px}
+.k1t{background:#3c3c3b;border-radius:32px;display:flex;gap:8px;padding:12px 32px 12px 32px;align-items:center}
+.k1u{display:flex;gap:32px}
+.k1v{align-self:stretch;display:flex;flex-direction:column;gap:32px;align-items:flex-start}
+.k1w{background:#e7e7e7;border-radius:8px;align-self:stretch;display:flex;flex-direction:column;padding:16px 16px 16px 16px;justify-content:space-between;align-items:flex-start;flex:1 1 0}
+.k1x{background:#ffffff;border:1px solid #3c3c3b;border-radius:16px;flex:0 0 calc((100% - 48px) / 3);min-width:0;display:flex;flex-direction:column;gap:24px;padding:8px 8px 8px 8px;align-items:flex-start;height:600px;overflow:hidden}
+.k1y{align-self:stretch;display:flex;gap:24px;flex-wrap:wrap;row-gap:48px;column-gap:24px;overflow:hidden}
+.k1z{border:1px solid #ffffff;border-radius:32px;display:flex;padding:6px 16px 6px 16px}
+.k20{display:flex;gap:8px;flex-wrap:wrap;row-gap:8px;column-gap:8px}
+.k21{align-self:stretch;text-align:center;color:#ffffff}
+.k22{align-self:stretch;display:flex;flex-direction:column;gap:16px;align-items:center;height:256px;flex-shrink:0}
+.k23{border:1px solid #ffffff;border-radius:8px;display:flex;flex-direction:column;gap:8px;padding:16px 24px 16px 24px;align-items:flex-start}
+.k24{align-self:stretch;display:flex;flex-direction:column;gap:16px;align-items:center;height:138px;flex-shrink:0}
+.k25{background:#3c3c3b;align-self:stretch;display:flex;flex-direction:column;gap:48px;align-items:center;width:100%;padding:96px max(40px, calc((100% - 1432px) / 2)) 96px max(40px, calc((100% - 1432px) / 2))}
+.k26{background:#ffffff;width:100%;display:flex;flex-direction:column;align-items:flex-start;overflow:hidden}
+</style>
+</head>
+<body data-page="atividade" data-base="atividade">
+<main class="page">
+<div data-n="Serviço Educativo — Atividade: Da poluição à economia (desktop)" class="k26"><div data-include="header"></div><div data-n="cabeçalho de página" class="k3 hero"><div class="k2"><p class="xs k0">Início</p><p class="xs k1">/</p><p class="xs k0">Serviço Educativo</p><p class="xs k1">/</p><p class="xs k0">Oferta Educativa 26/27</p><p class="xs k1">/</p><p class="xs"><b>Da poluição à economia</b></p></div></div><div data-n="intro" class="ka hero"><div class="k6"><div class="k5"><div class="k4"><p class="s"><b>Teórico-prática</b></p></div></div><div class="k5"><div class="k4"><p class="s"><b>Lixo marinho</b></p></div></div><div class="k5"><div class="k4"><p class="s"><b>Legislação Internacional</b></p></div></div></div><div class="k8"><h1 class="h1 k7">Da poluição à economia: O ciclo de vida do plástico numa perspetiva científica</h1></div><div class="k9"><p class="s"><b>Marcar atividade</b></p></div></div><div data-n="intro" class="kd rv"><div class="kc"><p class="m kb">Atividade interativa que aborda a poluição gerada em todo o ciclo do plástico, incentivando a análise crítica dos seus impactos ambientais, sociais e económicos. Introduz conceitos científicos, económicos e legais, promovendo uma compreensão colaborativa dos desafios globais ligados a este material.</p></div></div><div data-n="detalhes" class="kh rv"><div class="kg"><div class="ke"><p class="s kb">Duração</p><p class="m kb"><b>45 min</b></p></div><div class="kf"><p class="s kb">Destinatários</p><p class="m kb"><b>1.º Ciclo, 2.º Ciclo, 3.º Ciclo, Secundário, EFA e U. Sénior</b></p></div><div class="ke"><p class="s kb">Local de realização</p><p class="m kb"><b>Nas escolas ou nas instalações da ARDITI</b></p></div><div class="kf"><p class="s kb">Número de participantes</p><p class="m kb"><b>1 turma</b></p></div><div class="kf"><p class="s kb">Responsável</p><p class="m kb"><b>Sabine Rech</b></p></div><div class="kf"><p class="s kb">Requisitos específicos</p><p class="m kb"><b>Videoprojetor, idealmente whiteboard magnético grande e mesas para trabalho de grupos</b></p></div></div></div><div data-n="Pedir esta atividade" class="kz rv"><div class="kj"><h2 class="h2 k7">Pedir esta atividade</h2><p class="m ki">Gratuito para escolas da RAM</p></div><div class="ky"><div class="ku"><div class="km"><p class="m"><b>Escola</b></p><div class="kl"><p class="m kk">Nome da escola</p></div></div><div class="km"><p class="m"><b>Docente responsável</b></p><div class="kl"><p class="m kk">Nome completo</p></div></div><div class="km"><p class="m"><b>Email</b></p><div class="kl"><p class="m kk">nome@escola.pt</p></div></div><div class="km"><p class="m"><b>Telefone</b></p><div class="kl"><p class="m kk">+351</p></div></div><div class="km"><p class="m"><b>Ciclo / ano</b></p><div class="kl"><p class="s">Selecionar</p><i class="ic kn" data-i="icon-cd"></i></div></div><div class="km"><p class="m"><b>Número de alunos</b></p><div class="kl"><p class="m kk">Ex.: 24</p></div></div><div class="km"><p class="m"><b>Data pretendida</b></p><div class="kl"><p class="m kk">dd/mm/aaaa</p></div></div><div class="kr"><p class="m"><b>Local</b></p><div class="kq"><div class="k2"><i class="ic ko" data-i="Frame 184"></i><p class="m">Na escola</p></div><div class="k2"><div class="kp"></div><p class="m">Nas instalações da ARDITI</p></div></div></div><div class="kt"><p class="m"><b>Mensagem</b></p><div class="ks"><p class="m kk">Informação adicional (opcional)</p></div></div></div><div class="kv"><i class="ic ko" data-i="linha"></i><p class="s">Li e aceito a Política de Privacidade</p></div><div class="kx"><p class="m kw"><b>Enviar pedido</b></p></div></div></div><div data-n="galeria (opcional)" class="k13 rv"><div class="kq"><div class="k10"><p class="s k0">Fotografia de atividades anteriores</p></div><div class="k12"><div class="k11"><p class="s k0">Materiais utilizados</p></div><div class="k11"><p class="s k0">Alunos em ação</p></div></div><div class="k10"><p class="s k0">Fotografia 4</p></div></div></div><div data-n="Objetivos de Desenvolvimento Sustentável" class="k17 rv"><div class="k14"><h2 class="h2 kb">Objetivos de Desenvolvimento Sustentável</h2></div><div class="k16"><div class="k15"><p class="s k0">ODS</p></div><div class="k15"><p class="s k0">ODS</p></div><div class="k15"><p class="s k0">ODS</p></div><div class="k15"><p class="s k0">ODS</p></div></div></div><div data-n="Frame 109" class="k1c rv"><h2 class="h2">Boas práticas</h2><div class="k1b"><div class="k19"><p class="m k18">Salvo indicação em contrário, as escolas devem dispor de computador e sistema de videoprojeção. Há atividades com requisitos específicos que se encontram indicados na descrição das mesmas.</p></div><div class="k1a"><p class="m k18">﻿Os participantes devem estar no local à hora marcada e o professor responsável pelas turmas deve estar presente durante a sessão.</p></div><div class="k1a"><p class="m k18">﻿Qualquer alteração por parte da escola deve ser comunicada, por e-mail ou por telefone, com antecedência.</p></div><div class="k1a"><p class="m k18">﻿As alterações por parte do SE da ARDITI serão comunicadas tão brevemente quanto possível, por e-mail ou por telefone.</p></div></div></div><div data-n="bloco/CTA" class="k1i rv"><div class="k1h"><div class="k1d"><h3 class="h3 kb">Para mais informações ou dúvidas contacte o Serviço Educativo</h3></div><div class="k1g"><div class="k1f"><i class="ic k1e" data-i="Layer_1"></i><p class="s">+351 <b>291 721 001</b></p></div><div class="k1f"><i class="ic k1e" data-i="Layer_1"></i><p class="s">edu@arditi.pt</p></div></div></div></div><div data-n="vertentes" class="k1i rv"><h2 class="h2">Outras atividades</h2><div class="k1y"><div class="k1x"><div class="k1w"><div class="k1n"><div class="k1l"><div class="k1j"><p class="s k7"><b>01</b></p></div><div class="k1k"><p class="s"><b>Palestra</b></p></div></div><div class="k1m"><i class="ic kn" data-i="clock"></i><p class="s"><b>90 min</b></p></div></div><div class="k1v"><div class="k1r"><div class="k8"><div class="k1o"><div class="k5"><div class="k4"><p class="s"><b>Eletrónica</b></p></div></div><div class="k5"><div class="k4"><p class="s"><b>Sistemas autónomos</b></p></div></div></div><h4 class="h4 kb">Sistemas aéreos não-tripulados: Drones</h4></div><div class="k1q"><div class="k1p"><i class="ic k1e" data-i="person"></i><p class="s k18">3.º Ciclo e Secundário</p></div></div></div><div class="k1u"><div class="k1s"><p class="s"><b>Agendar atividade</b></p></div><div class="k1t"><p class="s kw"><b>Ver atividade</b></p><i class="ic kn" data-i="icon-ar"></i></div></div></div></div></div><div class="k1x"><div class="k1w"><div class="k1n"><div class="k1l"><div class="k1j"><p class="s k7"><b>02</b></p></div><div class="k1k"><p class="s"><b>Palestra</b></p></div></div><div class="k1m"><i class="ic kn" data-i="clock"></i><p class="s"><b>60 min</b></p></div></div><div class="k1v"><div class="k1r"><div class="k8"><div class="k1o"><div class="k5"><div class="k4"><p class="s"><b>Biologia marinha</b></p></div></div></div><h4 class="h4 kb">Da barbatana à conservação: Identificar, seguir e proteger</h4></div><div class="k1q"><div class="k1p"><i class="ic k1e" data-i="person"></i><p class="s k18">3.º Ciclo</p></div></div></div><div class="k1u"><div class="k1s"><p class="s"><b>Agendar atividade</b></p></div><div class="k1t"><p class="s kw"><b>Ver atividade</b></p><i class="ic kn" data-i="icon-ar"></i></div></div></div></div></div><div class="k1x"><div class="k1w"><div class="k1n"><div class="k1l"><div class="k1j"><p class="s k7"><b>03</b></p></div><div class="k1k"><p class="s"><b>Palestra</b></p></div></div><div class="k1m"><i class="ic kn" data-i="clock"></i><p class="s"><b>60 min</b></p></div></div><div class="k1v"><div class="k1r"><div class="k8"><div class="k1o"><div class="k5"><div class="k4"><p class="s"><b>Inovação</b></p></div></div></div><h4 class="h4 kb">Debate: Economia circular</h4></div><div class="k1q"><div class="k1p"><i class="ic k1e" data-i="person"></i><p class="s k18">3.º Ciclo</p></div></div></div><div class="k1u"><div class="k1s"><p class="s"><b>Agendar atividade</b></p></div><div class="k1t"><p class="s kw"><b>Ver atividade</b></p><i class="ic kn" data-i="icon-ar"></i></div></div></div></div></div></div></div><div data-n="CTA Block" class="k25 rv"><div class="k22"><div class="k20"><div class="k1z"><p class="s kw"><b>Investigadores</b></p></div><div class="k1z"><p class="s kw"><b>Empresas</b></p></div><div class="k1z"><p class="s kw"><b>Escolas</b></p></div><div class="k1z"><p class="s kw"><b>Entidades públicas</b></p></div><div class="k1z"><p class="s kw"><b>Cidadãos</b></p></div></div><p class="h1 k21"><b>Feita para quem investiga, inova e ensina.</b></p></div><div class="k24"><p class="xl kw">Venha conhecer a <b>ARDITI</b></p><div class="k23"><div class="k2"><p class="m kw"><b>Book a call with us</b></p><p class="s kw">→</p></div></div></div></div><div data-include="footer"></div></div>
+</main>
+<script src="pages.js"></script>
+<script src="icons.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

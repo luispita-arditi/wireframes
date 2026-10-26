@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NeuroRehabLab · ARDITI (protótipo)</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.k0{color:#a2a2a2}
+.k1{color:#d6d6d6}
+.k2{display:flex;gap:8px;align-items:center}
+.k3{background:#ffffff;align-self:stretch;display:flex;flex-direction:column;gap:24px;padding:24px 40px 24px 40px;align-items:flex-start;width:100%}
+.k4{color:#c2bfbf}
+.k5{border:2px solid #d6d6d6;border-radius:16px;width:160px;max-width:100%;display:flex;justify-content:center;align-items:center;height:80px;flex-shrink:0}
+.k6{align-self:stretch;color:#5f5f5f}
+.k7{align-self:stretch;display:flex;flex-direction:column;gap:16px;align-items:flex-start}
+.k8{flex:520 1 520px;min-width:0;display:flex;flex-direction:column;gap:24px;align-items:flex-start}
+.k9{background:#e7e7e7;border-radius:17.6842098236084px;flex:420 1 420px;min-width:0;display:flex;justify-content:center;align-items:center;height:560px}
+.ka{display:flex;gap:21.473684310913086px;align-items:center}
+.kb{flex:1 1 0;min-width:0;display:flex;gap:96px;align-items:center}
+.kc{color:#808080}
+.kd{position:absolute;left:802px;top:41px;background:#e7e7e7;border-radius:13.305261611938477px;flex:316 1 316px;min-width:0;display:flex;justify-content:center;align-items:center;height:421.3px}
+.ke{color:#c8c8c8}
+.kf{position:absolute;left:839px;top:202px;background:#e7e7e7;border-radius:13.305261611938477px;flex:316 1 316px;min-width:0;display:flex;justify-content:center;align-items:center;height:421.3px}
+.kg{position:absolute;left:708px;top:112px;background:#e7e7e7;border-radius:13.305261611938477px;flex:316 1 316px;min-width:0;display:flex;justify-content:center;align-items:center;height:421.3px}
+.kh{align-self:stretch;display:flex;gap:160px;padding:56px 40px 56px 40px;align-items:center;width:100%}
+.ki{align-self:stretch;text-align:center}
+.kj{flex:0 0 calc((100% - 72px) / 4);min-width:0;display:flex;flex-direction:column;gap:4px;align-items:flex-start}
+.kk{align-self:stretch;display:flex;gap:24px;flex-wrap:wrap;row-gap:40px;column-gap:24px}
+.kl{background:#f4f4f4;align-self:stretch;display:flex;flex-direction:column;gap:32px;align-items:center;width:100%;padding:64px max(40px, calc((100% - 1432px) / 2)) 48px max(40px, calc((100% - 1432px) / 2))}
+.km{align-self:stretch;display:flex;flex-direction:column;gap:4px;justify-content:center;align-items:flex-start}
+.kn{background:#e7e7e7;border-radius:48px;width:120px;max-width:100%;display:flex;justify-content:center;align-items:center;height:64px;flex-shrink:0}
+.ko{align-self:stretch}
+.kp{align-self:stretch;display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+.kq{display:flex;gap:8px}
+.kr{color:#ffffff}
+.ks{flex:0 1 16px;min-width:0;height:16px;width:16px}
+.kt{align-self:stretch;display:flex;gap:8px;padding:4px 0px 4px 0px;justify-content:center;align-items:center}
+.ku{background:#3c3c3b;border-radius:32px;display:flex;flex-direction:column;gap:8px;padding:0px 16px 0px 16px;align-items:flex-start}
+.kv{background:#f3f3f3;border:1px solid #d6d6d6;border-radius:16px;flex:0 1 461px;min-width:0;display:flex;flex-direction:column;gap:16px;padding:24px 24px 24px 24px;justify-content:flex-end;align-items:flex-start;height:532px}
+.kw{background:#f3f3f3;border:1px solid #d6d6d6;border-radius:16px;flex:0 1 462px;min-width:0;display:flex;flex-direction:column;gap:16px;padding:24px 24px 24px 24px;justify-content:flex-end;align-items:flex-start;height:532px}
+.kx{align-self:stretch;display:flex;gap:24px;align-items:center}
+.ky{background:#ffffff;align-self:stretch;display:flex;flex-direction:column;gap:32px;align-items:flex-end;width:100%;padding:65px max(39px, calc((100% - 1434px) / 2)) 65px max(39px, calc((100% - 1434px) / 2))}
+.kz{background:#e7e7e7;border-radius:18.13333511352539px;flex:0 1 340px;min-width:0;display:flex;justify-content:center;align-items:center;height:453px}
+.k10{align-self:stretch;color:#787878}
+.k11{width:24px;max-width:100%;height:24px;flex-shrink:0}
+.k12{align-self:stretch;display:flex;flex-direction:column;gap:4px;align-items:flex-start}
+.k13{flex:0 1 340px;min-width:0;display:flex;flex-direction:column;gap:16px;align-items:flex-start}
+.k14{flex:0 1 580px;min-width:0;display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+.k15{flex:1 1 0;min-width:0;display:flex;gap:26px}
+.k16{background:#ffffff;align-self:stretch;display:flex;flex-direction:column;gap:32px;align-items:flex-start;width:100%;padding:64px max(40px, calc((100% - 1432px) / 2)) 64px max(40px, calc((100% - 1432px) / 2))}
+.k17{background:#e7e7e7;flex:0 1 947px;min-width:0;display:flex;justify-content:center;align-items:center;height:480px}
+.k18{background:#e7e7e7;align-self:stretch;display:flex;justify-content:center;align-items:center;height:228px;flex-shrink:0}
+.k19{display:flex;flex-direction:column;gap:24px;align-items:flex-start}
+.k1a{align-self:stretch;display:flex;gap:24px}
+.k1b{background:#f9f9f9;align-self:stretch;display:flex;flex-direction:column;gap:32px;padding:56px 0px 56px 0px;align-items:flex-start;width:100%}
+.k1c{display:flex;flex-direction:column;gap:4px;justify-content:center;align-items:flex-start}
+.k1d{background:#e7e7e7;border-radius:0px 16px 16px 0px;flex:0 1 144px;min-width:0;display:flex;justify-content:center;align-items:center;align-self:stretch}
+.k1e{align-self:stretch;display:flex;flex-direction:column;gap:2px;align-items:flex-start}
+.k1f{flex:1 1 0;min-width:0;display:flex;flex-direction:column;gap:8px;padding:32px 24px 32px 24px;align-items:flex-start}
+.k1g{background:#ffffff;border:1px solid #e7e7e7;border-radius:16px;flex:0 1 461px;min-width:0;display:flex;align-items:center;overflow:hidden}
+.k1h{border:1px solid #3c3c3b;display:flex;gap:8px;padding:14px 24px 14px 24px;justify-content:center;align-items:center}
+.k1i{align-self:stretch;display:flex;flex-direction:column;gap:24px;align-items:flex-end}
+.k1j{background:#ffffff;align-self:stretch;display:flex;flex-direction:column;gap:24px;align-items:flex-start;width:100%;padding:64px max(40px, calc((100% - 1432px) / 2)) 64px max(40px, calc((100% - 1432px) / 2))}
+.k1k{background:#e7e7e7;border-radius:16px;align-self:stretch;position:relative;height:346px;flex-shrink:0;overflow:hidden}
+.k1l{display:flex;gap:8px;padding:4px 0px 4px 0px;justify-content:center;align-items:center}
+.k1m{display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+.k1n{align-self:stretch;display:flex;gap:25px}
+.k1o{background:#ffffff;align-self:stretch;display:flex;flex-direction:column;gap:32px;align-items:flex-end;width:100%;padding:32px max(39px, calc((100% - 1433px) / 2)) 32px max(39px, calc((100% - 1433px) / 2))}
+.k1p{flex:0 1 24px;min-width:0;height:24px;width:24px}
+.k1q{display:flex;gap:6px;align-items:center}
+.k1r{background:#f4f4f4;border-radius:16px;align-self:stretch;display:flex;padding:48px 48px 48px 48px;justify-content:space-between;align-items:center}
+.k1s{align-self:stretch;display:flex;flex-direction:column;gap:32px;align-items:flex-start;width:100%;padding:64px max(40px, calc((100% - 1432px) / 2)) 64px max(40px, calc((100% - 1432px) / 2))}
+.k1t{background:#f3f3f3;border:1px solid #d6d6d6;border-radius:16px;flex:0 0 calc((100% - 48px) / 3);min-width:0;display:flex;flex-direction:column;gap:16px;padding:24px 24px 24px 24px;justify-content:flex-end;align-items:flex-start;height:532px}
+.k1u{display:flex;flex-direction:column;gap:4px;align-items:flex-start}
+.k1v{align-self:stretch;display:flex;gap:24px;flex-wrap:wrap;row-gap:24px;column-gap:24px}
+.k1w{align-self:stretch;display:flex;flex-direction:column;gap:32px;align-items:flex-end;width:100%;padding:64px max(40px, calc((100% - 1432px) / 2)) 64px max(40px, calc((100% - 1432px) / 2))}
+.k1x{border:1px solid #ffffff;border-radius:32px;display:flex;padding:6px 16px 6px 16px}
+.k1y{display:flex;gap:8px;flex-wrap:wrap;row-gap:8px;column-gap:8px}
+.k1z{align-self:stretch;text-align:center;color:#ffffff}
+.k20{align-self:stretch;display:flex;flex-direction:column;gap:16px;align-items:center;height:256px;flex-shrink:0}
+.k21{border:1px solid #ffffff;border-radius:8px;display:flex;flex-direction:column;gap:8px;padding:16px 24px 16px 24px;align-items:flex-start}
+.k22{align-self:stretch;display:flex;flex-direction:column;gap:16px;align-items:center;height:138px;flex-shrink:0}
+.k23{background:#3c3c3b;align-self:stretch;display:flex;flex-direction:column;gap:48px;align-items:center;width:100%;padding:96px max(40px, calc((100% - 1432px) / 2)) 96px max(40px, calc((100% - 1432px) / 2))}
+.k24{background:#ffffff;width:100%;display:flex;flex-direction:column;align-items:flex-start;overflow:hidden}
+</style>
+</head>
+<body data-page="unidade-neurorehablab" data-base="unidade-neurorehablab">
+<main class="page">
+<div data-n="Investigação e Tecnologia — Unidade (template: NeuroRehabLab) (desktop)" class="k24"><div data-include="header"></div><div data-n="cabeçalho de página" class="k3 hero"><div class="k2"><p class="xs k0">Início</p><p class="xs k1">/</p><p class="xs k0">Investigação e Tecnologia</p><p class="xs k1">/</p><p class="xs k0">Madeira N-LINCS</p><p class="xs k1">/</p><p class="xs"><b>NeuroRehabLab</b></p></div></div><div data-n="intro" class="kh hero"><div class="k8"><div class="k5"><p class="s k4">Logo da unidade</p></div><div class="k7"><h1 class="h1">NeuroRehabLab</h1><p class="m k6">Laboratório de investigação dedicado ao desenvolvimento de tecnologias digitais para a saúde e qualidade de vida, combinando áreas como realidade virtual, jogos sérios, interfaces cérebro-computador e inteligência artificial. O seu trabalho procura apoiar a reabilitação motora e cognitiva e desenvolver soluções acessíveis para contextos clínicos e comunitários. </p></div></div><div class="kb"><div class="k9"><p class="xs k0">Fotografia de destaque</p></div><div class="ka"></div></div><div class="kd"><p class="xs kc">Fotografia de destaque</p></div><div class="kf"><p class="xs ke">Fotografia de destaque</p></div><div class="kg"><p class="xs ke">Fotografia de destaque</p></div></div><div data-n="bloco/estatísticas" class="kl rv"><div class="kk"><div class="kj"><p class="st ki">13</p><p class="l ki">Publicações científicas</p></div><div class="kj"><p class="st ki">7</p><p class="l ki">Artigos em revistas científicas</p></div><div class="kj"><p class="st ki">6</p><p class="l ki">Publicações em conferências</p></div><div class="kj"><p class="st ki">2</p><p class="l ki">Projetos</p></div></div><p class="xs">números de 2025</p></div><div data-n="Frame 111" class="ky rv"><div class="km"><h2 class="h2">Inovação aplicada</h2></div><div class="kx"><div class="kv"><div class="k7"><div class="k7"><div class="kp"><div class="kn"><p class="xs k0">Logo</p></div><h3 class="h3 ko">Mesa Interativa</h3></div><p class="s ko">Tecnologia + neurociência + prática clínica. Desenvolvida na unidade de investigação NeuroRehabLab, a mesa interativa utiliza jogos sérios para apoiar a reabilitação motora de pessoas que sofreram um AVC.</p></div><div class="kq"><p class="s"><b>Unidade de investigação:</b></p><p class="s">NeuroRehabLab</p></div><div class="ku"><div class="kt"><p class="s kr">Saber mais</p><i class="ic ks" data-i="icon-ar"></i></div></div></div></div><div class="kw"><div class="k7"><div class="k7"><div class="kp"><div class="kn"><p class="xs k0">Logo</p></div><h3 class="h3 ko">Jogos N-LINCS</h3></div></div><div class="kq"><p class="s"><b>Unidade de investigação:</b></p><p class="s">NeuroRehabLab</p></div><div class="ku"><div class="kt"><p class="s kr">Saber mais</p><i class="ic ks" data-i="icon-ar"></i></div></div></div></div></div></div><div data-n="responsável" class="k16 rv"><h2 class="h2 ko">Coordenador</h2><div class="kx"><div class="kz"><p class="s k0">Fotografia</p></div><div class="k15"><div class="k13"><div class="k12"><h2 class="h2 ko">Sergi Bermúdez</h2><p class="s k10">Coordenador do NeuroRehabLab</p><i class="ic k11" data-i="icon-social-linkedin"></i></div></div><div class="k14"><p class="m ko">Professor Associado na Universidade da Madeira e investigador do NOVALINCS. Licenciado pela UPC e doutorado pela ETH Zürich, realizou investigação na EPFL, UPF e Carnegie Mellon.<br>Coordena o NeuroRehabLab, onde desenvolve investigação em realidade virtual, jogos sérios, ciberpsicologia e reabilitação física. Reúne mais de 150 publicações e em 2024 esteve no top 2% de investigadores mais citados.</p><div class="k12"><p class="s"><b>Foco</b></p><p class="m ko">Promover inovação com impacto social a partir da Madeira.</p></div></div></div></div></div><div data-n="fotografias" class="k1b rv"><div class="k1a"><div class="k17"><p class="s k0">Fotografia de destaque</p></div><div class="k19"><div class="k18"><p class="s k0">Fotografia 2</p></div><div class="k18"><p class="s k0">Fotografia 3</p></div></div><div class="k17"><p class="s k0">Fotografia de destaque</p></div></div></div><div data-n="Frame 81" class="k1j rv"><div class="k1c"><h2 class="h2 ko">Projetos NeuroRehabLab</h2><p class="m">18 projetos</p></div><div class="k1i"><div class="k1a"><div class="k1g"><div class="k1d"><p class="xs k0">Logo</p></div><div class="k1f"><h4 class="h4 ko">Nome do projeto</h4><div class="k1e"><p class="s ko"><b>Programa</b></p><p class="s ko">Interreg Atlântica Área 2021-2027</p></div></div></div><div class="k1g"><div class="k1d"><p class="xs k0">Logo</p></div><div class="k1f"><h4 class="h4 ko">Nome do projeto</h4><div class="k1e"><p class="s ko"><b>Programa</b></p><p class="s ko">Interreg Atlântica Área 2021-2027</p></div></div></div><div class="k1g"><div class="k1d"><p class="xs k0">Logo</p></div><div class="k1f"><h4 class="h4 ko">Nome do projeto</h4><div class="k1e"><p class="s ko"><b>Programa</b></p><p class="s ko">Interreg Atlântica Área 2021-2027</p></div></div></div></div><div class="k1h"><p class="s"><b>Ver mais projetos NeuroRehabLab</b></p></div></div></div><div data-n="Frame 112" class="k1o rv"><div class="km"><h2 class="h2">Notícias relacionadas</h2></div><div class="k1n"><div class="k1m"><div class="k1k"></div><div class="k2"><p class="s">Investigação</p><p class="s">·</p><p class="s">25 de junho de 2025</p></div><h4 class="h4 ko">Campanha Oceanográfica Revela Segredos da Costa Norte da Madeira</h4><p class="m ko">Está em curso uma campanha oceanográfica pioneira na costa norte da Madeira, promovida pelo OOM.</p><div class="k1l"><p class="s"><b><u>Ler mais</u></b></p><i class="ic ks" data-i="icon-ar"></i></div></div><div class="k1m"><div class="k1k"></div><div class="k2"><p class="s">Institucional</p><p class="s">·</p><p class="s">15 de maio de 2025</p></div><h4 class="h4 ko">Relatório Anual 2024: um ano de mudança, crescimento e afirmação</h4><p class="m ko">A ARDITI publica o Relatório Anual 2024, marcado por crescimento científico e afirmação da Madeira no panorama europeu da investigação.</p><div class="k1l"><p class="s"><b><u>Ler mais</u></b></p><i class="ic ks" data-i="icon-ar"></i></div></div><div class="k1m"><div class="k1k"></div><div class="k2"><p class="s">Educação</p><p class="s">·</p><p class="s">6 de outubro de 2025</p></div><h4 class="h4 ko">Oferta Educativa da ARDITI 2025-2026</h4><p class="m ko">28 atividades gratuitas para a comunidade escolar da RAM.</p><div class="k1l"><p class="s"><b><u>Ler mais</u></b></p><i class="ic ks" data-i="icon-ar"></i></div></div></div><div class="k1h"><p class="s"><b>Ver mais notícias</b></p></div></div><div data-n="bloco/CTA" class="k1s rv"><div class="k1r"><div class="k1m"><h3 class="h3 ko">Saber mais sobre o NeuroRehabLab</h3></div><div class="k1q"><i class="ic k1p" data-i="Layer_1"></i><p class="s">+351 <b>291 721 220</b></p></div><div class="k1q"><i class="ic k1p" data-i="Layer_1"></i><p class="s">email.unidade@arditi.pt</p></div><div class="k1h"><p class="s"><b>Visitar site</b></p><i class="ic ks" data-i="icon-ex"></i></div></div></div><div data-n="unidades" class="k1w rv"><h2 class="h2 ko">Outras Unidades e Polos de Investigação</h2><div class="k1v"><div class="k1t"><div class="k7"><div class="k7"><div class="kp"><div class="kn"><p class="xs k0">Logo</p></div><h3 class="h3 ko">MARE-Madeira</h3></div><p class="s ko">Uma das principais unidades de investigação da ARDITI dedicada aos ecossistemas marinhos e costeiros, biodiversidade e economia azul. </p></div><div class="ku"><div class="kt"><p class="s kr">Saber mais</p><i class="ic ks" data-i="icon-ar"></i></div></div></div></div><div class="k1t"><div class="k7"><div class="k7"><div class="kp"><div class="kn"><p class="xs k0">Logo</p></div><h3 class="h3 ko">Madeira N-LINCS</h3></div></div><div class="k1u"><p class="s">Grupos de investigação:</p><div class="k1a"><p class="s"><b><u>NeuroRehabLab</u></b></p><p class="s"><b><u>EELab</u></b></p></div></div><div class="ku"><div class="kt"><p class="s kr">Saber mais</p><i class="ic ks" data-i="icon-ar"></i></div></div></div></div><div class="k1t"><div class="k7"><div class="k7"><div class="kp"><div class="kn"><p class="xs k0">Logo</p></div><h3 class="h3 ko">Instituto de Tecnologias Interativas (ITI)</h3></div></div><div class="ku"><div class="kt"><p class="s kr">Saber mais</p><i class="ic ks" data-i="icon-ar"></i></div></div></div></div></div><div class="k1h"><p class="s"><b>Ver mais Unidades</b></p></div></div><div data-n="CTA Block" class="k23 rv"><div class="k20"><div class="k1y"><div class="k1x"><p class="s kr"><b>Investigadores</b></p></div><div class="k1x"><p class="s kr"><b>Empresas</b></p></div><div class="k1x"><p class="s kr"><b>Escolas</b></p></div><div class="k1x"><p class="s kr"><b>Entidades públicas</b></p></div><div class="k1x"><p class="s kr"><b>Cidadãos</b></p></div></div><p class="h1 k1z"><b>Feita para quem investiga, inova e ensina.</b></p></div><div class="k22"><p class="xl kr">Venha conhecer a <b>ARDITI</b></p><div class="k21"><div class="k2"><p class="m kr"><b>Book a call with us</b></p><p class="s kr">→</p></div></div></div></div><div data-include="footer"></div></div>
+</main>
+<script src="pages.js"></script>
+<script src="icons.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

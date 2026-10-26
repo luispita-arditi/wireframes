@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SIFIDE-RAM · ARDITI (protótipo)</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.k0{color:#a2a2a2}
+.k1{color:#d6d6d6}
+.k2{display:flex;gap:8px;align-items:center}
+.k3{background:#ffffff;align-self:stretch;display:flex;flex-direction:column;padding:24px 40px 24px 40px;align-items:flex-start;width:100%}
+.k4{display:flex;gap:8px;padding:4px 0px 4px 0px;justify-content:center;align-items:center}
+.k5{border:1px solid #3c3c3b;border-radius:32px;display:flex;flex-direction:column;gap:8px;padding:0px 16px 0px 16px;align-items:flex-start}
+.k6{align-self:stretch}
+.k7{align-self:stretch;display:flex;flex-direction:column;gap:16px;align-items:flex-start}
+.k8{flex:16 1 16px;min-width:0;height:16px}
+.k9{border:1px solid #3c3c3b;display:flex;gap:8px;padding:14px 24px 14px 24px;justify-content:center;align-items:center}
+.ka{display:flex;gap:16px;align-items:center}
+.kb{flex:657 1 657px;min-width:0;display:flex;flex-direction:column;gap:48px;align-items:flex-start}
+.kc{align-self:stretch;display:flex;gap:72px;padding:56px 40px 56px 526px;align-items:center;width:100%}
+.kd{width:373px;max-width:100%}
+.ke{align-self:stretch;display:flex;flex-direction:column;gap:24px;align-items:flex-start}
+.kf{height:15px;width:6px}
+.kg{flex:1 1 0;min-width:0}
+.kh{align-self:stretch;display:flex;gap:12px}
+.ki{align-self:stretch;display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+.kj{background:#ffffff;border-radius:16px;flex:1 1 0;min-width:0;display:flex;flex-direction:column;gap:24px;padding:40px 40px 40px 40px;align-items:flex-start}
+.kk{background:#ffffff;border-radius:16px;flex:1 1 0;min-width:0;display:flex;flex-direction:column;gap:24px;padding:40px 40px 40px 40px;align-items:flex-start;align-self:stretch}
+.kl{align-self:stretch;display:flex;gap:24px;align-items:center;height:302px;flex-shrink:0}
+.km{background:#fafafa;align-self:stretch;display:flex;flex-direction:column;gap:24px;align-items:flex-start;width:100%;padding:64px max(40px, calc((100% - 946px) / 2)) 64px max(526px, calc((100% - 946px) / 2))}
+.kn{background:#ffffff;border:1px solid #d6d6d6;border-radius:16px;flex:0 0 calc((100% - 48px) / 3);min-width:0;display:flex;flex-direction:column;gap:12px;padding:24px 24px 24px 24px;align-items:flex-start;height:238px}
+.ko{align-self:stretch;display:flex;gap:24px;flex-wrap:wrap;row-gap:24px;column-gap:24px}
+.kp{background:#ffffff;align-self:stretch;display:flex;flex-direction:column;gap:32px;align-items:flex-start;width:100%;padding:64px max(40px, calc((100% - 946px) / 2)) 64px max(526px, calc((100% - 946px) / 2))}
+.kq{width:373px;max-width:100%;display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+.kr{width:928px;max-width:100%}
+.ks{background:#ffffff;align-self:stretch;display:flex;flex-direction:column;gap:24px;align-items:flex-start;width:100%;padding:64px max(40px, calc((100% - 946px) / 2)) 64px max(526px, calc((100% - 946px) / 2))}
+.kt{border:1px solid #3c3c3b;border-radius:32px;flex:0 1 32px;min-width:0;display:flex;justify-content:center;align-items:center;height:32px}
+.ku{align-self:stretch;display:flex;gap:16px;align-items:center}
+.kv{flex:0 1 16px;min-width:0;height:16px;width:16px}
+.kw{background:#e7e7e7;border-radius:8px;flex:0 1 200px;min-width:0;display:flex;justify-content:center;align-items:center;height:96px}
+.kx{display:flex;gap:24px}
+.ky{background:#fafafa;align-self:stretch;display:flex;flex-direction:column;gap:32px;align-items:flex-start;width:100%;padding:64px max(40px, calc((100% - 1432px) / 2)) 64px max(40px, calc((100% - 1432px) / 2))}
+.kz{background:#e7e7e7;border-radius:48px;width:120px;max-width:100%;display:flex;justify-content:center;align-items:center;height:64px;flex-shrink:0}
+.k10{align-self:stretch;display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+.k11{color:#ffffff}
+.k12{align-self:stretch;display:flex;gap:8px;padding:4px 0px 4px 0px;justify-content:center;align-items:center}
+.k13{background:#3c3c3b;border-radius:32px;display:flex;flex-direction:column;gap:8px;padding:0px 16px 0px 16px;align-items:flex-start}
+.k14{background:#f3f3f3;border:1px solid #d6d6d6;border-radius:16px;flex:0 1 462px;min-width:0;display:flex;flex-direction:column;padding:24px 24px 24px 24px;justify-content:space-between;align-items:flex-start;height:532px}
+.k15{align-self:stretch;display:flex;flex-direction:column;gap:24px;align-items:flex-start;width:100%;padding:64px max(40px, calc((100% - 1432px) / 2)) 64px max(40px, calc((100% - 1432px) / 2))}
+.k16{border:1px solid #ffffff;border-radius:32px;display:flex;padding:6px 16px 6px 16px}
+.k17{display:flex;gap:8px;flex-wrap:wrap;row-gap:8px;column-gap:8px}
+.k18{align-self:stretch;text-align:center;color:#ffffff}
+.k19{align-self:stretch;display:flex;flex-direction:column;gap:16px;align-items:center;height:256px;flex-shrink:0}
+.k1a{border:1px solid #ffffff;border-radius:8px;display:flex;flex-direction:column;gap:8px;padding:16px 24px 16px 24px;align-items:flex-start}
+.k1b{align-self:stretch;display:flex;flex-direction:column;gap:16px;align-items:center;height:138px;flex-shrink:0}
+.k1c{background:#3c3c3b;align-self:stretch;display:flex;flex-direction:column;gap:48px;align-items:center;width:100%;padding:96px max(40px, calc((100% - 1432px) / 2)) 96px max(40px, calc((100% - 1432px) / 2))}
+.k1d{position:absolute;left:6px;top:0px;background:#3c3c3b;width:1px;height:324px}
+.k1e{position:absolute;left:0px;top:2px;background:#3c3c3b;width:13px;height:13px}
+.k1f{flex:0 1 13px;min-width:0;position:relative;align-self:stretch;height:324px}
+.k1g{background:#dfdfdf;width:56px;max-width:100%;height:2px;flex-shrink:0}
+.k1h{align-self:stretch;display:flex;flex-direction:column;gap:4px;align-items:flex-start}
+.k1i{flex:0 1 308px;min-width:0;display:flex;flex-direction:column;gap:32px;align-items:flex-start}
+.k1j{position:absolute;left:40px;top:350px;display:flex;gap:27px;width:100%}
+.k1k{background:#ffffff;width:100%;display:flex;flex-direction:column;align-items:flex-start;overflow:hidden}
+</style>
+</head>
+<body data-page="sifide-ram" data-base="sifide-ram">
+<main class="page">
+<div data-n="Inovação — Programa: SIFIDE-RAM (desktop)" class="k1k"><div data-include="header"></div><div data-n="cabeçalho de página" class="k3 hero"><div class="k2"><p class="xs k0">Início</p><p class="xs k1">/</p><p class="xs k0">Inovação</p><p class="xs k1">/</p><p class="xs k0">Programas de ligação Academia-Empresa</p><p class="xs k1">/</p><p class="xs"><b>SIFIDE-RAM</b></p></div></div><div data-n="intro" class="kc hero"><div class="kb"><div class="k5"><div class="k4"><p class="s"><b>Ativo</b></p></div></div><div class="k7"><h1 class="h1 k6">SIFIDE-RAM</h1><p class="l k6">Apoio fiscal que permite às empresas recuperar investimento em investigação e desenvolvimento.</p></div><div class="ka"><div class="k9"><p class="s"><b>Candidatar-se</b></p><i class="ic k8" data-i="icon-ex"></i></div><div class="k9"><p class="s"><b>Saber mais</b></p></div></div></div></div><div data-n="O que é" class="km rv"><h2 class="h2 kd">O que é</h2><div class="ke"><p class="m k6">O SIFIDE-RAM visa aumentar a competitividade das empresas apoiando o seu esforço em Investigação &amp; Desenvolvimento através da dedução à coleta do IRC de uma percentagem das respectivas despesas de I&amp;D (na parte não comparticipada a fundo perdido pelo Estado ou por Fundos Europeus).</p><p class="m k6"><b>A ARDITI apoia empresas na identificação, enquadramento e validação de projetos elegíveis, facilitando o acesso a este incentivo.</b></p></div><div class="kl"><div class="kj"><h3 class="h3">Para quem</h3><div class="ki"><div class="kh"><i class="ic kf" data-i="linha"></i><p class="m kg">Empresas que investem em investigação e desenvolvimento</p></div><div class="kh"><i class="ic kf" data-i="linha"></i><p class="m kg">Organizações que desenvolvem novos produtos, serviços ou processos</p></div><div class="kh"><i class="ic kf" data-i="linha"></i><p class="m kg">Empresas com projetos de inovação tecnológica</p></div></div></div><div class="kk"><h3 class="h3">O que oferece</h3><div class="ki"><div class="kh"><i class="ic kf" data-i="linha"></i><p class="m kg">Benefícios fiscais sobre despesas de I&amp;D</p></div><div class="kh"><i class="ic kf" data-i="linha"></i><p class="m kg">Redução do IRC através de deduções fiscais</p></div><div class="kh"><i class="ic kf" data-i="linha"></i><p class="m kg">Enquadramento de projetos de inovação</p></div><div class="kh"><i class="ic kf" data-i="linha"></i><p class="m kg">Apoio técnico no processo de candidatura</p></div></div></div></div></div><div data-n="como funciona" class="kp rv"><h2 class="h2 k6">Como funciona</h2><div class="ko"><div class="kn"><p class="st">01</p><h4 class="h4 k6">Identificação do projeto</h4><p class="m k6">A empresa identifica atividades de I&amp;D elegíveis.</p></div><div class="kn"><p class="st">02</p><h4 class="h4 k6">Enquadramento técnico</h4><p class="m k6">Apoio na validação do enquadramento no âmbito do SIFIDE-RAM.</p></div><div class="kn"><p class="st">03</p><h4 class="h4 k6">Submissão da candidatura</h4><p class="m k6">Preparação e submissão da candidatura junto das entidades competentes.</p></div><div class="kn"><p class="st">04</p><h4 class="h4 k6">Avaliação e validação</h4><p class="m k6">O projeto é analisado pelas entidades responsáveis.</p></div><div class="kn"><p class="st">05</p><h4 class="h4 k6">Benefício fiscal</h4><p class="m k6">Aplicação da dedução no IRC.</p></div></div></div><div data-n="Benefícios fiscais" class="km rv"><div class="kq"><h2 class="h2 k6">Benefícios fiscais</h2></div><div class="ke"><p class="m k6">O SIFIDE permite deduzir uma percentagem significativa das despesas de I&amp;D, incluindo:</p><div class="ki"><p class="m kr"><b>0%</b> Custos com pessoal afeto a atividades de I&amp;D</p><p class="m kr"><b>0%</b> Aquisição de equipamentos</p><p class="m kr"><b>0%</b> Despesas operacionais relacionadas com investigação</p><p class="m kr"><b>0%</b> Participação em projetos de inovação</p></div></div></div><div data-n="Impacto" class="ks rv"><div class="kq"><h2 class="h2 k6">Impacto</h2></div><div class="ke"><p class="m k6">O SIFIDE-RAM tem contribuído para:</p><div class="ki"><div class="kh"><i class="ic kf" data-i="linha"></i><p class="m kg">Incentivar o investimento privado em investigação e desenvolvimento</p></div><div class="kh"><i class="ic kf" data-i="linha"></i><p class="m kg">Aumentar a capacidade de inovação das empresas</p></div><div class="kh"><i class="ic kf" data-i="linha"></i><p class="m kg">Reforçar a ligação entre empresas e entidades científicas</p></div><div class="kh"><i class="ic kf" data-i="linha"></i><p class="m kg">Promover projetos com impacto económico e tecnológico</p></div></div></div></div><div data-n="Papel da ARDITI" class="km rv"><div class="kq"><h2 class="h2 k6">Papel da ARDITI</h2></div><div class="ke"><p class="m k6">A ARDITI valida entidades regionais elegíveis para prestar serviços de I&amp;D no âmbito do SIFIDE-RAM (Sistema de Incentivos Fiscais à I&amp;D Empresarial), permitindo que empresas que investem em investigação possam beneficiar de incentivos fiscais. Um contributo que reforça qualidade, rigor e confiança no sistema regional.</p></div></div><div data-n="Como participar" class="ks rv"><div class="kq"><h2 class="h2 k6">Como participar</h2></div><div class="ke"><p class="m k6">As candidaturas ao SIFIDE-RAM são submetidas através da plataforma oficial. Para se candidatar, a empresa deve:</p><div class="ki"><div class="ku"><div class="kt"><p class="s">1</p></div><p class="m kg">Registar-se na plataforma oficial</p></div><div class="ku"><div class="kt"><p class="s">2</p></div><p class="m kg">Submeter a candidatura com descrição das atividades de I&amp;D</p></div><div class="ku"><div class="kt"><p class="s">3</p></div><p class="m kg">Anexar documentação de suporte</p></div><div class="ku"><div class="kt"><p class="s">4</p></div><p class="m kg">Aguardar avaliação pelas entidades competentes</p></div></div><div class="k9"><p class="s"><b>Aceder à plataforma</b></p><i class="ic kv" data-i="icon-ex"></i></div></div></div><div data-n="logos" class="ky rv"><h2 class="h2 k6">Parceiros e financiamento</h2><div class="kx"><div class="kw"><p class="s k0">Logo</p></div><div class="kw"><p class="s k0">Logo</p></div><div class="kw"><p class="s k0">Logo</p></div><div class="kw"><p class="s k0">Logo</p></div><div class="kw"><p class="s k0">Logo</p></div><div class="kw"><p class="s k0">Logo</p></div><div class="kw"><p class="s k0">Logo</p></div></div></div><div data-n="Outros projetos de I&amp;D Aplicada" class="k15 rv"><h2 class="h2">Outros programas de ligação Academia-Empresa</h2><div class="kx"><div class="k14"><div class="k5"><div class="k4"><p class="s"><b>Ativo</b></p></div></div><div class="k7"><div class="k7"><div class="k10"><div class="kz"><p class="xs k0">Logo</p></div><h3 class="h3 k6">iLab</h3></div></div><div class="k13"><div class="k12"><p class="s k11">Saber mais</p><i class="ic kv" data-i="icon-ar"></i></div></div></div></div></div></div><div data-n="CTA Block" class="k1c rv"><div class="k19"><div class="k17"><div class="k16"><p class="s k11"><b>Investigadores</b></p></div><div class="k16"><p class="s k11"><b>Empresas</b></p></div><div class="k16"><p class="s k11"><b>Escolas</b></p></div><div class="k16"><p class="s k11"><b>Entidades públicas</b></p></div><div class="k16"><p class="s k11"><b>Cidadãos</b></p></div></div><p class="h1 k18"><b>Feita para quem investiga, inova e ensina.</b></p></div><div class="k1b"><p class="xl k11">Venha conhecer a <b>ARDITI</b></p><div class="k1a"><div class="k2"><p class="m k11"><b>Book a call with us</b></p><p class="s k11">→</p></div></div></div></div><div data-include="footer"></div><div data-n="Frame 117" class="k1j rv"><div class="k1f"><div class="k1d"></div><div class="k1e"></div></div><div class="k1i"><div class="k1h"><p class="s k6"><b>O que é</b></p><div class="k1g"></div></div><p class="s k6">Como funciona</p><p class="s k6">Benefícios fiscais</p><p class="s k6">Impacto</p><p class="s k6">Papel da ARDITI</p><p class="s k6">Como participar</p><p class="s k6">Parceiros e financiamento</p></div></div></div>
+</main>
+<script src="pages.js"></script>
+<script src="icons.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Digital Shift (evento) · ARDITI (protótipo)</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.k0{color:#a2a2a2}
+.k1{color:#d6d6d6}
+.k2{display:flex;gap:8px;align-items:center}
+.k3{background:#ffffff;align-self:stretch;display:flex;flex-direction:column;padding:24px 40px 24px 40px;align-items:flex-start;width:100%}
+.k4{background:#e7e7e7;border-radius:16px;flex:461 1 461px;min-width:0;display:flex;justify-content:center;align-items:center;height:544px}
+.k5{text-align:center}
+.k6{text-align:center;text-transform:uppercase}
+.k7{display:flex;gap:8px;align-items:baseline}
+.k8{align-self:stretch;text-align:center;text-transform:uppercase}
+.k9{flex:10 1 10px;min-width:0;display:flex;flex-direction:column;gap:8px;padding:0px 0px 8px 0px;justify-content:flex-end;align-items:center;align-self:stretch}
+.ka{display:flex;gap:16px;align-items:center}
+.kb{flex:24 1 24px;min-width:0;height:24px;width:24px}
+.kc{display:flex;gap:4px;align-items:center}
+.kd{background:#3c3c3b;border-radius:50%;flex:4 1 4px;min-width:0;height:4px}
+.ke{align-self:stretch;display:flex;gap:16px;align-items:center;height:24px;flex-shrink:0}
+.kf{display:flex;flex-direction:column;gap:16px;align-items:flex-start}
+.kg{display:flex;gap:8px;padding:4px 0px 4px 0px;justify-content:center;align-items:center}
+.kh{border:1px solid #3c3c3b;border-radius:32px;display:flex;flex-direction:column;gap:8px;padding:0px 16px 0px 16px;align-items:flex-start}
+.ki{align-self:stretch;display:flex;gap:4px;flex-wrap:wrap;row-gap:4px;column-gap:4px}
+.kj{align-self:stretch}
+.kk{align-self:stretch;display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+.kl{flex:16 1 16px;min-width:0;height:16px}
+.km{border:1px solid #3c3c3b;display:flex;gap:8px;padding:14px 24px 14px 24px;justify-content:center;align-items:center;height:48px}
+.kn{color:#ffffff}
+.ko{background:#3c3c3b;display:flex;gap:8px;padding:14px 24px 14px 24px;justify-content:center;align-items:center}
+.kp{display:flex;gap:24px}
+.kq{flex:657 1 657px;min-width:0;display:flex;flex-direction:column;gap:40px;align-items:flex-start}
+.kr{align-self:stretch;display:flex;gap:72px;padding:56px 161px 56px 161px;align-items:center;width:100%}
+.ks{width:440px;display:flex;flex-direction:column;gap:4px;align-items:flex-start;height:48px}
+.kt{width:440px;display:flex;flex-direction:column;gap:4px;align-items:flex-start;height:72px}
+.ku{background:#f4f4f4;border-radius:16px;align-self:stretch;display:flex;gap:24px;padding:32px 32px 32px 32px}
+.kv{align-self:stretch;display:flex;flex-direction:column;gap:32px;align-items:flex-start;width:100%;padding:24px max(40px, calc((100% - 1432px) / 2)) 32px max(40px, calc((100% - 1432px) / 2))}
+.kw{align-self:stretch;display:flex;flex-direction:column;gap:24px;align-items:flex-start}
+.kx{width:720px;max-width:100%;display:flex;flex-direction:column;gap:32px;align-items:flex-start}
+.ky{align-self:stretch;display:flex;flex-direction:column;gap:24px;align-items:center;width:100%;padding:64px max(40px, calc((100% - 1432px) / 2)) 64px max(40px, calc((100% - 1432px) / 2))}
+.kz{align-self:stretch;display:flex;flex-direction:column;gap:4px;align-items:center}
+.k10{background:#3c3c3b;border-radius:50%;flex:0 1 4px;min-width:0;height:4px}
+.k11{align-self:stretch;display:flex;gap:8px;align-items:center}
+.k12{flex:1 1 0;min-width:0;display:flex;flex-direction:column;gap:4px;align-items:flex-start}
+.k13{flex:0 1 40px;min-width:0;height:40px;width:40px}
+.k14{display:flex;gap:2px;align-items:center}
+.k15{align-self:stretch;display:flex;gap:16px;align-items:center}
+.k16{background:#3c3c3b;align-self:stretch;height:2px;flex-shrink:0}
+.k17{flex:0 1 960px;min-width:0;display:flex;flex-direction:column;gap:16px;align-items:flex-start}
+.k18{color:#d3d3d3}
+.k19{background:#d3d3d3;border-radius:50%;flex:0 1 4px;min-width:0;height:4px}
+.k1a{align-self:stretch;color:#d3d3d3}
+.k1b{align-self:stretch;display:flex;flex-direction:column;gap:4px;align-items:flex-start}
+.k1c{background:#d3d3d3;align-self:stretch;height:2px;flex-shrink:0}
+.k1d{background:#3c3c3b;width:56px;max-width:100%;height:2px;flex-shrink:0}
+.k1e{display:flex;flex-direction:column;gap:10px;align-items:center}
+.k1f{display:flex;gap:40px}
+.k1g{align-self:stretch;display:flex;flex-direction:column;align-items:flex-start}
+.k1h{flex:0 1 120px;min-width:0}
+.k1i{align-self:stretch;display:flex;gap:32px;padding:24px 0px 24px 0px}
+.k1j{border:1px solid #3c3c3b;border-radius:32px;display:flex;padding:4px 12px 4px 12px}
+.k1k{flex:1 1 0;min-width:0;display:flex;flex-direction:column;gap:16px;align-items:flex-start}
+.k1l{border-top:1px solid #f0f0f0;align-self:stretch;display:flex;gap:32px;padding:24px 0px 24px 0px}
+.k1m{flex:0 1 900px;min-width:0;display:flex;flex-direction:column;gap:4px;align-items:flex-start}
+.k1n{width:900px;max-width:100%}
+.k1o{align-self:stretch;display:flex;gap:8px}
+.k1p{flex:0 1 900px;min-width:0;display:flex;flex-direction:column;gap:16px;align-items:flex-start}
+.k1q{flex:0 1 960px;min-width:0;display:flex;flex-direction:column;align-items:flex-start}
+.k1r{flex:0 1 120px;min-width:0;color:#d6d6d6}
+.k1s{border:1px solid #d3d3d3;border-radius:32px;display:flex;padding:4px 12px 4px 12px}
+.k1t{align-self:stretch;color:#d6d6d6}
+.k1u{width:900px;max-width:100%;color:#d3d3d3}
+.k1v{flex:0 1 16px;min-width:0;height:16px;width:16px}
+.k1w{border:1px solid #3c3c3b;display:flex;gap:8px;padding:14px 24px 14px 24px;justify-content:center;align-items:center;height:48px;flex-shrink:0}
+.k1x{background:#ffffff;align-self:stretch;display:flex;flex-direction:column;gap:32px;align-items:flex-start;width:100%;padding:64px max(40px, calc((100% - 1432px) / 2)) 64px max(40px, calc((100% - 1432px) / 2))}
+.k1y{background:#e7e7e7;border-radius:16px;align-self:stretch;display:flex;justify-content:center;align-items:center;height:300px;flex-shrink:0}
+.k1z{align-self:stretch;color:#5f5f5f}
+.k20{width:24px;max-width:100%;height:24px;flex-shrink:0}
+.k21{align-self:stretch;display:flex;flex-direction:column;gap:16px;align-items:flex-start}
+.k22{align-self:stretch;display:flex;flex-direction:column;justify-content:space-between;align-items:flex-start;flex:1 1 0}
+.k23{flex:0 0 calc((100% - 72px) / 4);min-width:0;display:flex;flex-direction:column;gap:16px;align-items:flex-start;height:466px}
+.k24{flex:0 0 calc((100% - 72px) / 4);min-width:0;display:flex;flex-direction:column;gap:16px;align-items:flex-start}
+.k25{align-self:stretch;display:flex;gap:24px;flex-wrap:wrap;row-gap:32px;column-gap:24px}
+.k26{align-self:stretch;text-align:center}
+.k27{width:373px;max-width:100%;display:flex;flex-direction:column;gap:4px;align-items:center}
+.k28{color:#dddddd}
+.k29{background:#ffffff;border:1px solid #d6d6d6;border-radius:8px;align-self:stretch;display:flex;padding:0px 16px 0px 16px;justify-content:space-between;align-items:center;height:48px;flex-shrink:0}
+.k2a{flex:0 0 calc((100% - 24px) / 2);min-width:0;display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+.k2b{flex:0 1 20px;min-width:0;height:20px;width:20px}
+.k2c{background:#ffffff;border:1px solid #3c3c3b;border-radius:50%;flex:0 1 20px;min-width:0;height:20px}
+.k2d{flex:0 0 calc((100% - 24px) / 2);min-width:0;display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+.k2e{background:#ffffff;border:1px solid #d6d6d6;border-radius:8px;align-self:stretch;display:flex;padding:12px 16px 12px 16px;justify-content:space-between;height:120px;flex-shrink:0}
+.k2f{flex:0 1 946px;min-width:0;display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+.k2g{align-self:stretch;display:flex;gap:24px;flex-wrap:wrap;row-gap:24px;column-gap:24px}
+.k2h{display:flex;gap:12px;align-items:center}
+.k2i{width:946px;max-width:100%;display:flex;flex-direction:column;gap:24px;align-items:flex-start}
+.k2j{background:#fafafa;align-self:stretch;display:flex;flex-direction:column;gap:24px;align-items:center;width:100%;padding:64px max(40px, calc((100% - 1432px) / 2)) 64px max(40px, calc((100% - 1432px) / 2))}
+.k2k{flex:1 1 0;min-width:0;display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+.k2l{flex:0 1 24px;min-width:0;height:24px;width:24px}
+.k2m{border-radius:8px;display:flex;gap:8px;align-items:center}
+.k2n{align-self:stretch;display:flex;padding:16px 0px 16px 0px;justify-content:space-between;align-items:center}
+.k2o{background:#f4f4f4;align-self:stretch;height:1px;flex-shrink:0}
+.k2p{flex:1 1 0;min-width:0;display:flex;gap:16px;align-items:center}
+.k2q{align-self:stretch;display:flex;gap:16px;padding:16px 0px 16px 0px;align-items:center}
+.k2r{flex:0 1 946px;min-width:0;display:flex;flex-direction:column;gap:24px;align-items:flex-start}
+.k2s{background:#ffffff;align-self:stretch;display:flex;gap:24px;width:100%;padding:64px max(40px, calc((100% - 1432px) / 2)) 64px max(40px, calc((100% - 1432px) / 2))}
+.k2t{width:373px;max-width:100%;display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+.k2u{flex:1 1 0;min-width:0}
+.k2v{background:#ffffff;border:1px solid #eeeeee;border-radius:16px;align-self:stretch;display:flex;flex-direction:column;gap:16px;padding:24px 24px 24px 24px;align-items:flex-start}
+.k2w{display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+.k2x{align-self:stretch;display:flex;gap:6px;align-items:center}
+.k2y{display:flex;flex-direction:column;gap:6px;justify-content:center;align-items:flex-start}
+.k2z{background:#f4f4f4;border-radius:16px;align-self:stretch;display:flex;padding:48px 48px 48px 48px;justify-content:space-between;align-items:center}
+.k30{align-self:stretch;display:flex;flex-direction:column;gap:32px;align-items:flex-start;width:100%;padding:64px max(40px, calc((100% - 1432px) / 2)) 64px max(40px, calc((100% - 1432px) / 2))}
+.k31{border:1px solid #a2a2a2;border-radius:32px;display:flex;flex-direction:column;gap:8px;padding:0px 16px 0px 16px;align-items:flex-start}
+.k32{background:#e7e7e7;border-radius:48px;width:120px;max-width:100%;display:flex;justify-content:center;align-items:center;height:64px;flex-shrink:0}
+.k33{align-self:stretch;display:flex;gap:8px;padding:4px 0px 4px 0px;justify-content:center;align-items:center}
+.k34{background:#3c3c3b;border-radius:32px;display:flex;flex-direction:column;gap:8px;padding:0px 16px 0px 16px;align-items:flex-start}
+.k35{background:#f3f3f3;border:1px solid #d6d6d6;border-radius:16px;flex:0 1 461px;min-width:0;display:flex;flex-direction:column;padding:24px 24px 24px 24px;justify-content:space-between;align-items:flex-start;height:532px}
+.k36{align-self:stretch;display:flex;flex-direction:column;gap:24px;align-items:flex-start;width:100%;padding:64px max(40px, calc((100% - 1432px) / 2)) 64px max(40px, calc((100% - 1432px) / 2))}
+.k37{align-self:stretch;display:flex;flex-direction:column;gap:4px;justify-content:center;align-items:flex-start}
+.k38{background:#e7e7e7;border-radius:16px;align-self:stretch;position:relative;height:346px;flex-shrink:0;overflow:hidden}
+.k39{align-self:stretch;display:flex;gap:25px}
+.k3a{border:1px solid #3c3c3b;display:flex;gap:8px;padding:14px 24px 14px 24px;justify-content:center;align-items:center}
+.k3b{background:#ffffff;align-self:stretch;display:flex;flex-direction:column;gap:32px;align-items:flex-end;width:100%;padding:32px max(39px, calc((100% - 1433px) / 2)) 32px max(39px, calc((100% - 1433px) / 2))}
+.k3c{border:1px solid #ffffff;border-radius:32px;display:flex;padding:6px 16px 6px 16px}
+.k3d{display:flex;gap:8px;flex-wrap:wrap;row-gap:8px;column-gap:8px}
+.k3e{align-self:stretch;text-align:center;color:#ffffff}
+.k3f{align-self:stretch;display:flex;flex-direction:column;gap:16px;align-items:center;height:256px;flex-shrink:0}
+.k3g{border:1px solid #ffffff;border-radius:8px;display:flex;flex-direction:column;gap:8px;padding:16px 24px 16px 24px;align-items:flex-start}
+.k3h{align-self:stretch;display:flex;flex-direction:column;gap:16px;align-items:center;height:138px;flex-shrink:0}
+.k3i{background:#3c3c3b;align-self:stretch;display:flex;flex-direction:column;gap:48px;align-items:center;width:100%;padding:96px max(40px, calc((100% - 1432px) / 2)) 96px max(40px, calc((100% - 1432px) / 2))}
+.k3j{background:#ffffff;width:100%;display:flex;flex-direction:column;align-items:flex-start;overflow:hidden}
+</style>
+</head>
+<body data-page="evento" data-base="evento">
+<main class="page">
+<div data-n="Notícias e Eventos — Evento: InnoVamos (desktop)" class="k3j"><div data-include="header"></div><div data-n="cabeçalho de página" class="k3 hero"><div class="k2"><p class="xs k0">Início</p><p class="xs k1">/</p><p class="xs k0">Notícias e Eventos</p><p class="xs k1">/</p><p class="xs k0">Agenda</p><p class="xs k1">/</p><p class="xs"><b>Digital Shift: acelere a transformação digital da sua empresa</b></p></div></div><div data-n="intro" class="kr hero"><div class="k4"><p class="s k0">Imagem do evento</p></div><div class="kq"><div class="kf"><div class="ka"><div class="k7"><h1 class="h1 k5">24</h1><p class="l k6"><b>Out</b></p></div><div class="k9"><p class="l k8"><b>-</b></p></div><div class="k7"><h1 class="h1 k5">14</h1><p class="l k6"><b>nov</b></p></div></div><div class="ke"><div class="kc"><i class="ic kb" data-i="geo-alt"></i><p class="m"><b>Funchal</b></p></div><div class="kd"></div><div class="kc"><p class="m"><b>Presencial</b></p></div></div></div><div class="kk"><div class="ki"><div class="kh"><div class="kg"><p class="s"><b>Gratuito</b></p></div></div></div><h2 class="h2 kj">Digital Shift: acelere a transformação digital da sua empresa</h2><p class="l kj">O Digital Shift é um programa intensivo e gratuito da ARDITI que ajuda as PME da Madeira a dar o salto digital.</p></div><div class="kp"><div class="km"><i class="ic kl" data-i="download"></i><p class="s"><b>Descarregar Agenda (pdf)</b></p></div><div class="k2"><div class="ko"><p class="s kn"><b>Inscrições</b></p></div></div></div></div></div><div data-n="detalhes" class="kv rv"><div class="ku"><div class="ks"><p class="s kj">Formato</p><p class="m kj"><b>Presencial</b></p></div><div class="ks"><p class="s kj">Data Início</p><p class="m kj"><b>09/10/26</b></p></div><div class="ks"><p class="s kj">Data Fim</p><p class="m kj"><b>14/11/26</b></p></div><div class="kt"><p class="s kj">Idiomas do evento</p><p class="m kj"><b>Espanhol, Inglês e Português (com tradução simultânea nos três idiomas)</b></p></div><div class="kt"><p class="s kj">Local</p><p class="m kj"><b>CIGMA – Centro Integrado de Gestão Municipal Autónoma</b></p></div><div class="kt"><p class="s kj">Morada</p><p class="m kj"><b>Campus de Tafira, 35017 Las Palmas de Gran Canaria, Espanha</b></p></div></div></div><div data-n="Sobre o evento" class="ky rv"><div class="kx"><h2 class="h2 kj">Sobre o evento</h2><div class="kw"><p class="m kj">O Digital Shift é um programa intensivo e gratuito da ARDITI que ajuda as PME da Madeira a dar o salto digital: definir uma estratégia, otimizar processos e explorar novas oportunidades de inovação, de forma prática e adaptada à realidade regional.</p><p class="m kj">Ao longo de quatro sextas-feiras, as empresas trabalham com especialistas em conteúdos práticos, exercícios aplicados e partilha de experiências, organizados em torno do tema “Pessoas, Dados, Tecnologia &amp; Ecossistemas”.</p><p class="m kj">O programa termina com uma visita a organizações de referência na transformação digital, com momentos de networking entre empresas e especialistas.</p></div></div></div><div data-n="programa" class="k1x rv"><div class="kz"><h2 class="h2 kj">Programa</h2><p class="l kj">Quatro dias intensivos, das 09h00 às 17h00.</p></div><div class="k1g tabs"><div class="k1f"><div class="k17"><div class="k15"><div class="k12"><div class="k11"><h4 class="h4">Dia 1</h4><div class="k10"></div><h4 class="h4">24 Out</h4></div><p class="s kj">Estratégia de negócio e modelo de negócio digital</p></div><div class="k14"><i class="ic k13" data-i="arrow-left"></i><i class="ic k13" data-i="arrow-right"></i></div></div><div class="k16"></div></div><div class="k17"><div class="k1b"><div class="k11"><h4 class="h4 k18">Dia 2</h4><div class="k19"></div><h4 class="h4 k18">31 Out</h4></div><p class="s k1a">Automação de processos e eficiência</p></div><div class="k1c"></div></div><div class="k1e"><p class="m kj"><b>Concluídos</b></p><div class="k1d"></div></div></div></div><div class="k1f"><div class="k1q"><div class="k1i"><p class="s k1h">09h00</p><div class="k12"><h4 class="h4 kj">Receção e boas-vindas</h4></div></div><div class="k1l"><p class="s k1h">09h30</p><div class="k1k"><div class="k1b"><div class="k11"><div class="k1j"><p class="s"><b>Workshop</b></p></div><h4 class="h4">Diagnóstico: o ponto de partida digital da empresa</h4></div><p class="m kj">Exercício aplicado para mapear processos, ferramentas e maturidade digital.</p></div><p class="s">Nome do especialista</p></div></div><div class="k1l"><p class="s k1h">11h00</p><div class="k1m"><h4 class="h4 kj">Pausa</h4></div></div><div class="k1l"><p class="s k1h">11h15</p><div class="k1k"><div class="k11"><div class="k1j"><p class="s"><b>Talk</b></p></div><h4 class="h4">Sessão: estratégia e modelo de negócio digital</h4></div><p class="s">Nome do especialista</p></div></div><div class="k1l"><p class="s k1h">13h00</p><div class="k12"><h4 class="h4 k1n">Almoço e networking</h4></div></div><div class="k1l"><p class="s k1h">14h00</p><div class="k1p"><div class="k1b"><div class="k1o"><div class="k1j"><p class="s"><b>Workshop</b></p></div><h4 class="h4">Exercício aplicado em grupo</h4></div></div><p class="s">Nome do especialista</p></div></div><div class="k1l"><p class="s k1h">16h30</p><div class="k1m"><h4 class="h4 kj">Partilha de experiências e encerramento do dia</h4></div></div></div><div class="k1q"><div class="k1i"><p class="s k1r">09h00</p><div class="k12"><h4 class="h4 k1a">Receção e boas-vindas</h4></div></div><div class="k1l"><p class="s k1r">09h30</p><div class="k1k"><div class="k1b"><div class="k11"><div class="k1s"><p class="s k18"><b>Workshop</b></p></div><h4 class="h4 k18">Diagnóstico: o ponto de partida digital da empresa</h4></div><p class="m k1t">Exercício aplicado para mapear processos, ferramentas e maturidade digital.</p></div><p class="s k1">Nome do especialista</p></div></div><div class="k1l"><p class="s k1r">11h00</p><div class="k1m"><h4 class="h4 k1a">Pausa</h4></div></div><div class="k1l"><p class="s k1r">11h15</p><div class="k1k"><div class="k11"><div class="k1s"><p class="s k1">Talk</p></div><h4 class="h4 k18">Sessão: estratégia e modelo de negócio digital</h4></div><p class="s k1">Nome do especialista</p></div></div><div class="k1l"><p class="s k1r">13h00</p><div class="k12"><h4 class="h4 k1u">Almoço e networking</h4></div></div><div class="k1l"><p class="s k1r">14h00</p><div class="k1p"><div class="k1b"><div class="k1o"><div class="k1s"><p class="s k18"><b>Workshop</b></p></div><h4 class="h4 k18">Exercício aplicado em grupo</h4></div></div><p class="s k1">Nome do especialista</p></div></div><div class="k1l"><p class="s k1r">16h30</p><div class="k1m"><h4 class="h4 k1a">Partilha de experiências e encerramento do dia</h4></div></div></div></div><div class="k1w"><i class="ic k1v" data-i="download"></i><p class="s"><b>Descarregar Agenda (pdf)</b></p></div></div><div data-n="oradores" class="k1x rv"><div class="kk"><h2 class="h2 kj">Especialistas confirmados</h2></div><div class="k25"><div class="k23"><div class="k1y"><p class="s k0">Fotografia</p></div><div class="k22"><div class="k1b"><h4 class="h4 kj">Bernardo Caldas</h4><p class="m k1z">Líder de Dados &amp; IA</p></div><div class="k21"><p class="s kj">Mollie</p><i class="ic k20" data-i="icon-social-linkedin"></i></div></div></div><div class="k23"><div class="k1y"><p class="s k0">Fotografia</p></div><div class="k22"><div class="k1b"><h4 class="h4 kj">Candy Flores</h4><p class="m k1z">XR e Tecnologias Emergentes</p></div><div class="k21"><p class="s kj">Madalia World</p><i class="ic k20" data-i="icon-social-linkedin"></i></div></div></div><div class="k23"><div class="k1y"><p class="s k0">Fotografia</p></div><div class="k22"><div class="k1b"><h4 class="h4 kj">Diogo Babo</h4><p class="m k1z">Coordenador CoC Madeira</p></div><div class="k21"><p class="s kj">Unipartner</p><i class="ic k20" data-i="icon-social-linkedin"></i></div></div></div><div class="k24"><div class="k1y"><p class="s k0">Fotografia</p></div><div class="k21"><div class="k1b"><h4 class="h4 kj">Diogo Freitas</h4><p class="m k1z">Engenheiro Informático e Bolseiro de Investigação</p></div><div class="k21"><p class="s kj">FCT</p><i class="ic k20" data-i="icon-social-linkedin"></i></div></div></div><div class="k23"><div class="k1y"><p class="s k0">Fotografia</p></div><div class="k22"><div class="k1b"><h4 class="h4 kj">Eliano Marques</h4><p class="m k1z">Líder em IA, Dados e Tecnologia</p></div><div class="k21"><p class="s kj">Datamentors</p><i class="ic k20" data-i="icon-social-linkedin"></i></div></div></div><div class="k23"><div class="k1y"><p class="s k0">Fotografia</p></div><div class="k22"><div class="k1b"><h4 class="h4 kj">Joana Mendonça</h4><p class="m k1z">Design Thinking e Transição Digital</p></div><div class="k21"><p class="s kj">Instituto Superior Técnico</p><i class="ic k20" data-i="icon-social-linkedin"></i></div></div></div><div class="k23"><div class="k1y"><p class="s k0">Fotografia</p></div><div class="k21"><div class="k1b"><h4 class="h4 kj">Marco Gouveia</h4><p class="m k1z">Consultor e Formador em Marketing Digital</p></div><div class="k21"><p class="s kj">—</p><i class="ic k20" data-i="icon-social-linkedin"></i></div></div></div><div class="k23"><div class="k1y"><p class="s k0">Fotografia</p></div><div class="k22"><div class="k1b"><h4 class="h4 kj">Nuno Perry</h4><p class="m k1z">Especialista em Cibersegurança</p></div><div class="k21"><p class="s kj">Governo Regional da Madeira</p><i class="ic k20" data-i="icon-social-linkedin"></i></div></div></div><div class="k23"><div class="k1y"><p class="s k0">Fotografia</p></div><div class="k22"><div class="k1b"><h4 class="h4 kj">Nuno Pimenta</h4><p class="m k1z">Chefe de Divisão</p></div><div class="k21"><p class="s kj">CIGMA</p><i class="ic k20" data-i="icon-social-linkedin"></i></div></div></div><div class="k23"><div class="k1y"><p class="s k0">Fotografia</p></div><div class="k22"><div class="k1b"><h4 class="h4 kj">Pedro Correia</h4><p class="m k1z">Estratégia e Financiamento Europeu</p></div><div class="k21"><p class="s kj">Universidade da Madeira</p><i class="ic k20" data-i="icon-social-linkedin"></i></div></div></div><div class="k23"><div class="k1y"><p class="s k0">Fotografia</p></div><div class="k22"><div class="k1b"><h4 class="h4 kj">Ricardo Marvão</h4><p class="m k1z">Ecossistemas de Inovação</p></div><div class="k21"><p class="s kj">Beta-i</p><i class="ic k20" data-i="icon-social-linkedin"></i></div></div></div><div class="k23"><div class="k1y"><p class="s k0">Fotografia</p></div><div class="k22"><div class="k1b"><h4 class="h4 kj">Rui Coutinho</h4><p class="m k1z">Inovação e Estratégia</p></div><div class="k21"><p class="s kj">Nova SBE</p><i class="ic k20" data-i="icon-social-linkedin"></i></div></div></div></div></div><div data-n="formulario de inscrição" class="k2j rv"><div class="k27"><h2 class="h2 k26">Inscrever-se</h2><p class="m k5">Evento gratuito</p></div><div class="k2i"><div class="k2g"><div class="k2a"><p class="m"><b>Nome</b></p><div class="k29"><p class="m k28">Nome da escola</p></div></div><div class="k2a"><p class="m"><b>Empresa</b></p><div class="k29"><p class="m k28">Nome da escola</p></div></div><div class="k2a"><p class="m"><b>Email</b></p><div class="k29"><p class="m k28">nome@escola.pt</p></div></div><div class="k2d"><p class="m"><b>Campo</b></p><div class="kp"><div class="k2"><i class="ic k2b" data-i="Frame 184"></i><p class="m">Resposta</p></div><div class="k2"><div class="k2c"></div><p class="m">Resposta</p></div></div></div><div class="k2f"><p class="m"><b>Mensagem</b></p><div class="k2e"><p class="m k28">Informação adicional (opcional)</p></div></div></div><div class="k2h"><i class="ic k2b" data-i="linha"></i><p class="s">Li e aceito a Política de Privacidade</p></div><div class="ko"><p class="m kn"><b>Enviar pedido</b></p></div></div></div><div data-n="Documentos do concurso" class="k2s rv"><div class="k2k"><h2 class="h2 kj">Recursos</h2></div><div class="k2r"><div class="k1g"><div class="k1g"><div class="k2n"><div class="ka"><i class="ic k2l" data-i="link-45deg"></i><p class="s"><b>Inscrições</b></p></div><div class="k2m"><div class="k14"><p class="xs"><b>digitalshift.arditi.pt</b></p></div></div></div><div class="k2o"></div></div><div class="k1g"><div class="k2q"><div class="k2p"><i class="ic k2l" data-i="filetype-pdf"></i><p class="s"><b>Agenda Digital Shift</b></p><p class="xs k0">243 kb</p></div><div class="k2m"><i class="ic k1v" data-i="download"></i><div class="k14"><p class="xs"><b>Descarregar ficheiro</b></p></div></div></div><div class="k2o"></div></div></div></div></div><div data-n="Informação legal" class="k2j rv"><div class="k2t"><h2 class="h2 k26">Perguntas frequentes</h2></div><div class="kf"><div class="k2v"><div class="k15"><h4 class="h4 k2u">Quanto custa participar?</h4><i class="ic k2b" data-i="icon-mi"></i></div><p class="m kj">A participação é gratuita, mas as vagas são limitadas a 30 PME.</p></div><div class="k2v"><div class="k15"><h4 class="h4 k2u">Quem se pode inscrever?</h4><i class="ic k2b" data-i="icon-pl"></i></div></div><div class="k2v"><div class="k15"><h4 class="h4 k2u">É obrigatório participar nos quatro dias?</h4><i class="ic k2b" data-i="icon-pl"></i></div></div><div class="k2v"><div class="k15"><h4 class="h4 k2u">Como são selecionadas as empresas?</h4><i class="ic k2b" data-i="icon-pl"></i></div></div><div class="k2v"><div class="k15"><h4 class="h4 k2u">Há certificado de participação?</h4><i class="ic k2b" data-i="icon-pl"></i></div></div></div></div><div data-n="bloco/CTA" class="k30 rv"><div class="k2z"><div class="k2w"><h3 class="h3 kj">Ponto de contacto</h3></div><div class="k2y"><div class="k2x"><i class="ic k2l" data-i="Layer_1"></i><p class="s">email@arditi.pt</p></div></div></div></div><div data-n="Outros projetos de I&amp;D Aplicada" class="k36 rv"><h2 class="h2">Programa de ligação Academia-Empresa</h2><div class="kp"><div class="k35"><div class="k31"><div class="kg"><p class="s k0"><b>Concluído</b></p></div></div><div class="k21"><div class="k21"><div class="kk"><div class="k32"><p class="xs k0">Logo</p></div><h3 class="h3 kj">Digital Shift</h3></div></div><div class="k34"><div class="k33"><p class="s kn">Saber mais</p><i class="ic k1v" data-i="icon-ar"></i></div></div></div></div></div></div><div data-n="Frame 113" class="k3b rv"><div class="k37"><h2 class="h2">Notícias relacionadas</h2></div><div class="k39"><div class="k2w"><div class="k38"></div><div class="k2"><p class="s">Investigação</p><p class="s">·</p><p class="s">25 de junho de 2025</p></div><h4 class="h4 kj">Campanha Oceanográfica Revela Segredos da Costa Norte da Madeira</h4><p class="m kj">Está em curso uma campanha oceanográfica pioneira na costa norte da Madeira, promovida pelo OOM.</p><div class="kg"><p class="s"><b><u>Ler mais</u></b></p><i class="ic k1v" data-i="icon-ar"></i></div></div><div class="k2w"><div class="k38"></div><div class="k2"><p class="s">Institucional</p><p class="s">·</p><p class="s">15 de maio de 2025</p></div><h4 class="h4 kj">Relatório Anual 2024: um ano de mudança, crescimento e afirmação</h4><p class="m kj">A ARDITI publica o Relatório Anual 2024, marcado por crescimento científico e afirmação da Madeira no panorama europeu da investigação.</p><div class="kg"><p class="s"><b><u>Ler mais</u></b></p><i class="ic k1v" data-i="icon-ar"></i></div></div><div class="k2w"><div class="k38"></div><div class="k2"><p class="s">Educação</p><p class="s">·</p><p class="s">6 de outubro de 2025</p></div><h4 class="h4 kj">Oferta Educativa da ARDITI 2025-2026</h4><p class="m kj">28 atividades gratuitas para a comunidade escolar da RAM.</p><div class="kg"><p class="s"><b><u>Ler mais</u></b></p><i class="ic k1v" data-i="icon-ar"></i></div></div></div><div class="k3a"><p class="s"><b>Ver mais notícias</b></p></div></div><div data-n="CTA Block" class="k3i rv"><div class="k3f"><div class="k3d"><div class="k3c"><p class="s kn"><b>Investigadores</b></p></div><div class="k3c"><p class="s kn"><b>Empresas</b></p></div><div class="k3c"><p class="s kn"><b>Escolas</b></p></div><div class="k3c"><p class="s kn"><b>Entidades públicas</b></p></div><div class="k3c"><p class="s kn"><b>Cidadãos</b></p></div></div><p class="h1 k3e"><b>Feita para quem investiga, inova e ensina.</b></p></div><div class="k3h"><p class="xl kn">Venha conhecer a <b>ARDITI</b></p><div class="k3g"><div class="k2"><p class="m kn"><b>Book a call with us</b></p><p class="s kn">→</p></div></div></div></div><div data-include="footer"></div></div>
+</main>
+<script src="pages.js"></script>
+<script src="icons.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

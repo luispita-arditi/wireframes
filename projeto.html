@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A3MATLANTIC · ARDITI (protótipo)</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.k0{color:#a2a2a2}
+.k1{color:#d6d6d6}
+.k2{display:flex;gap:8px;align-items:center}
+.k3{background:#ffffff;align-self:stretch;display:flex;flex-direction:column;padding:24px 40px 24px 40px;align-items:flex-start;width:100%}
+.k4{border:1px solid #3c3c3b;border-radius:16px;display:flex;padding:4px 12px 4px 12px}
+.k5{align-self:stretch}
+.k6{display:flex;flex-direction:column;gap:2px;align-items:flex-start}
+.k7{flex:1 1 0;min-width:0;display:flex;flex-direction:column;gap:16px;align-items:flex-start}
+.k8{align-self:stretch;display:flex;gap:56px;padding:24px 161px 24px 161px;align-items:center;width:100%}
+.k9{flex:0 0 calc((100% - 72px) / 4);min-width:0;display:flex;flex-direction:column;gap:4px;align-items:flex-start;height:48px}
+.ka{background:#f4f4f4;border-radius:16px;align-self:stretch;display:flex;gap:24px;flex-wrap:wrap;row-gap:32px;column-gap:24px;padding:32px 32px 32px 32px}
+.kb{align-self:stretch;display:flex;flex-direction:column;gap:32px;align-items:flex-start;width:100%;padding:0px max(40px, calc((100% - 1432px) / 2)) 32px max(40px, calc((100% - 1432px) / 2))}
+.kc{flex:0 1 373px;min-width:0;display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+.kd{height:15px;width:6px}
+.ke{flex:1 1 0;min-width:0}
+.kf{align-self:stretch;display:flex;gap:12px}
+.kg{align-self:stretch;display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+.kh{flex:0 1 800px;min-width:0;display:flex;flex-direction:column;gap:24px;align-items:flex-start}
+.ki{align-self:stretch;display:flex;justify-content:space-between;width:100%;padding:64px max(40px, calc((100% - 1432px) / 2)) 64px max(40px, calc((100% - 1432px) / 2))}
+.kj{flex:0 1 373px;min-width:0;display:flex;flex-direction:column;gap:4px;align-items:flex-start}
+.kk{align-self:stretch;display:flex;gap:8px}
+.kl{flex:1 1 0;min-width:0;display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+.km{flex:0 1 800px;min-width:0;display:flex;gap:48px}
+.kn{background:#f4f4f4;align-self:stretch;display:flex;justify-content:space-between;width:100%;padding:64px max(40px, calc((100% - 1432px) / 2)) 64px max(40px, calc((100% - 1432px) / 2))}
+.ko{align-self:stretch;display:flex;flex-direction:column;gap:4px;align-items:flex-start}
+.kp{background:#e7e7e7;border-radius:8px;flex:0 1 120px;min-width:0;display:flex;justify-content:center;align-items:center;height:120px}
+.kq{display:flex;gap:16px}
+.kr{align-self:stretch;display:flex;flex-direction:column;gap:24px;align-items:flex-start;width:100%;padding:64px max(40px, calc((100% - 1432px) / 2)) 64px max(40px, calc((100% - 1432px) / 2))}
+.ks{width:373px;max-width:100%;display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+.kt{background:#e7e7e7;border-radius:8px;flex:0 1 200px;min-width:0;display:flex;justify-content:center;align-items:center;height:96px}
+.ku{display:flex;gap:24px}
+.kv{width:946px;max-width:100%;display:flex;flex-direction:column;gap:24px;align-items:flex-start}
+.kw{background:#f4f4f4;align-self:stretch;display:flex;flex-direction:column;gap:24px;align-items:flex-start;width:100%;padding:64px max(40px, calc((100% - 1432px) / 2)) 64px max(40px, calc((100% - 1432px) / 2))}
+.kx{background:#e7e7e7;border-radius:88px;width:96px;max-width:100%;display:flex;justify-content:center;align-items:center;height:96px;flex-shrink:0}
+.ky{align-self:stretch;display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+.kz{align-self:stretch;display:flex;flex-direction:column;gap:16px;align-items:flex-start}
+.k10{display:flex;flex-direction:column;gap:4px;align-items:flex-start}
+.k11{color:#ffffff}
+.k12{flex:0 1 16px;min-width:0;height:16px;width:16px}
+.k13{align-self:stretch;display:flex;gap:8px;padding:4px 0px 4px 0px;justify-content:center;align-items:center}
+.k14{background:#3c3c3b;border-radius:32px;display:flex;flex-direction:column;gap:8px;padding:0px 16px 0px 16px;align-items:flex-start}
+.k15{background:#f3f3f3;border:1px solid #d6d6d6;border-radius:16px;flex:0 0 calc((100% - 48px) / 3);min-width:0;display:flex;flex-direction:column;gap:16px;padding:24px 24px 24px 24px;justify-content:flex-end;align-items:flex-start;height:444px}
+.k16{align-self:stretch;display:flex;gap:24px;flex-wrap:wrap;row-gap:24px;column-gap:24px}
+.k17{border:1px solid #ffffff;border-radius:32px;display:flex;padding:6px 16px 6px 16px}
+.k18{display:flex;gap:8px;flex-wrap:wrap;row-gap:8px;column-gap:8px}
+.k19{align-self:stretch;text-align:center;color:#ffffff}
+.k1a{align-self:stretch;display:flex;flex-direction:column;gap:16px;align-items:center;height:256px;flex-shrink:0}
+.k1b{border:1px solid #ffffff;border-radius:8px;display:flex;flex-direction:column;gap:8px;padding:16px 24px 16px 24px;align-items:flex-start}
+.k1c{align-self:stretch;display:flex;flex-direction:column;gap:16px;align-items:center;height:138px;flex-shrink:0}
+.k1d{background:#3c3c3b;align-self:stretch;display:flex;flex-direction:column;gap:48px;align-items:center;width:100%;padding:96px max(40px, calc((100% - 1432px) / 2)) 96px max(40px, calc((100% - 1432px) / 2))}
+.k1e{background:#ffffff;width:100%;display:flex;flex-direction:column;align-items:flex-start;overflow:hidden}
+</style>
+</head>
+<body data-page="projeto" data-base="projeto">
+<main class="page">
+<div data-n="Projetos — Projeto: A3MATLANTIC (desktop)" class="k1e"><div data-include="header"></div><div data-n="cabeçalho de página" class="k3 hero"><div class="k2"><p class="xs k0">Início</p><p class="xs k1">/</p><p class="xs k0">Projetos</p><p class="xs k1">/</p><p class="xs k0">Em curso</p><p class="xs k1">/</p><p class="xs"><b>A3MATLANTIC</b></p></div></div><div data-n="intro" class="k8 hero"><div class="k7"><div class="k4"><p class="xs"><b>Em curso</b></p></div><h1 class="h1 k5">A3MATLANTIC</h1><p class="l k5">Reforçar o crescimento sustentável e a competitividade das PME que constituem o tecido produtivo dos sectores da economia azul no Médio Atlântico</p><div class="k6"><p class="s"><b>Programa:</b></p><p class="m k5">MAC INTERREG 2021-2027</p></div></div></div><div data-n="detalhes" class="kb rv"><div class="ka"><div class="k9"><p class="s k5">Data de início</p><p class="m k5"><b>25/10/2024</b></p></div><div class="k9"><p class="s k5">Data de conclusão</p><p class="m k5"><b>24/10/2028</b></p></div><div class="k9"><p class="s k5">Orçamento total</p><p class="m k5"><b>3 161 096,31 €</b></p></div><div class="k9"><p class="s k5">Apoio financeiro</p><p class="m k5"><b>2 686 931,86 €</b></p></div><div class="k9"><p class="s k5">Orçamento ARDITI</p><p class="m k5"><b>132 511,25 €</b></p></div><div class="k9"><p class="s k5">Apoio financeiro ARDITI</p><p class="m k5"><b>112 634,56 €</b></p></div><div class="k9"><p class="s k5">Programa</p><p class="m k5"><b>MAC INTERREG 2021-2027</b></p></div></div></div><div data-n="Sobre o projeto" class="ki rv"><div class="kc"><h2 class="h2 k5">Sobre o projeto</h2></div><div class="kh"><p class="m k5">A missão do projeto A3MAtlantic é promover a atividade socioeconómica, o investimento sustentável e o crescimento baseado no conhecimento científico-técnico no domínio marinho-marítimo, através de uma colaboração activa regional, nacional e internacional. A proposta visa apoiar a governança da A3M ampliando o seu raio de atuação, levando a aliança para além dos territórios MAC, a fim de gerar uma agenda de posicionamento estratégico nos centros de decisão a nível europeu e internacional.</p><p class="m k5">A A3MAtlantic irá centrar a sua atividade na promoção da inovação e internacionalização das PME:</p><div class="kg"><div class="kf"><i class="ic kd" data-i="linha"></i><p class="m ke">Reforçar a aliança A3M para o posicionamento estratégico dos territórios MAC, elevando esta iniciativa como uma ferramenta na Europa para tornar as políticas azuis permeáveis a nível regional;</p></div><div class="kf"><i class="ic kd" data-i="linha"></i><p class="m ke">A implementação de ações de sensibilização, aconselhamento e apoio às PME;</p></div><div class="kf"><i class="ic kd" data-i="linha"></i><p class="m ke">Promover o desenvolvimento de competências de formação (upskilling, requalificação, cross-skilling);</p></div><div class="kf"><i class="ic kd" data-i="linha"></i><p class="m ke">Favorecer a participação de empresas regionais nos mercados internacionais.</p></div></div></div></div><div data-n="Parceiros" class="kn rv"><div class="kj"><h2 class="h2 k5">Parceiros</h2><p class="m">17 parceiros</p></div><div class="km"><div class="kl"><div class="kk"><i class="ic kd" data-i="linha"></i><p class="m ke">Asociación Cluster Marítimo de Canarias (CMC)</p></div><div class="kk"><i class="ic kd" data-i="linha"></i><p class="m ke">Consorcio para el Diseño, Construcción, Equipamiento y Explotación de la Plataforma Oceánica de Canarias</p></div><div class="kk"><i class="ic kd" data-i="linha"></i><p class="m ke">Gobierno de Canarias: Agencia Canaria de Investigación, Innovación y Sociedad de la Información (ACIISI)</p></div><div class="kk"><i class="ic kd" data-i="linha"></i><p class="m ke">Associação Comercial e Industrial do Funchal - Câmara de Comércio e Indústria da Madeira</p></div><div class="kk"><i class="ic kd" data-i="linha"></i><p class="m ke">Secretaria Regional do Mar e das Pescas: Direção Regional de Políticas Marítimas</p></div><div class="kk"><i class="ic kd" data-i="linha"></i><p class="m ke">Associação para o Desenvolvimento e Formação do Mar dos Açores - ADFMA</p></div><div class="kk"><i class="ic kd" data-i="linha"></i><p class="m ke">Câmara do Comércio e Indústria da Horta</p></div><div class="kk"><i class="ic kd" data-i="linha"></i><p class="m ke">Autoridade da Zona Económica Especial de Economia Marítima em São Vicente (ZEEMSV)</p></div><div class="kk"><i class="ic kd" data-i="linha"></i><p class="m ke">Centre for Enterprise Learning</p></div></div><div class="kl"><div class="kk"><i class="ic kd" data-i="linha"></i><p class="m ke">Centro Tecnologico de Ciencias Marinas - CETECIMA</p></div><div class="kk"><i class="ic kd" data-i="linha"></i><p class="m ke">Sociedad Canaria de Fomento Económico, S. A. (PROEXCA)</p></div><div class="kk"><i class="ic kd" data-i="linha"></i><p class="m ke">ARDITI</p></div><div class="kk"><i class="ic kd" data-i="linha"></i><p class="m ke">Secretaria Regional de Mar e Pescas: Direção Regional do Mar</p></div><div class="kk"><i class="ic kd" data-i="linha"></i><p class="m ke">Vice-Presidência do Governo Regional: Fundo Regional da Ciência e Tecnologia</p></div><div class="kk"><i class="ic kd" data-i="linha"></i><p class="m ke">Câmara do Comércio de Angra do Heroísmo</p></div><div class="kk"><i class="ic kd" data-i="linha"></i><p class="m ke">Câmara de Comércio de Barlavento (CCB)</p></div><div class="kk"><i class="ic kd" data-i="linha"></i><p class="m ke">Côte D'Ivoire PME SA</p></div></div></div></div><div data-n="Objetivos de Desenvolvimento Sustentável" class="kr rv"><div class="ko"><h2 class="h2 k5">Objetivos de Desenvolvimento Sustentável</h2><p class="m k5">Este projeto está alinhado com os seguintes Objetivos de Desenvolvimento Sustentável (ODS):</p></div><div class="kq"><div class="kp"><p class="s k0">ODS</p></div><div class="kp"><p class="s k0">ODS</p></div><div class="kp"><p class="s k0">ODS</p></div><div class="kp"><p class="s k0">ODS</p></div></div></div><div data-n="Financiamento" class="kw rv"><div class="ks"><h2 class="h2 k5">Financiamento</h2></div><div class="kv"><div class="ku"><div class="kt"><p class="s k0">Logo</p></div><div class="kt"><p class="s k0">Logo</p></div><div class="kt"><p class="s k0">Logo</p></div></div></div></div><div data-n="Outros projetos" class="kr rv"><div class="ks"><h2 class="h2 k5">Outros projetos</h2></div><div class="k16"><div class="k15"><div class="kz"><div class="kx"><p class="xs k0">Logo</p></div><div class="kz"><div class="ky"><h3 class="h3 k5">Projeto A3MATLANTIC</h3></div></div><div class="k10"><p class="s"><b>Programa</b></p><p class="s k5">MAC INTERREG 2021-2027</p></div><div class="k14"><div class="k13"><p class="s k11">Saber mais</p><i class="ic k12" data-i="icon-ar"></i></div></div></div></div><div class="k15"><div class="kz"><div class="kx"><p class="xs k0">Logo</p></div><div class="kz"><div class="ky"><h4 class="h4 k5">Projeto ACUICONNECTA</h4></div></div><div class="k10"><p class="s"><b>Programa</b></p><p class="s k5">MAC INTERREG 2021-2027</p></div><div class="k14"><div class="k13"><p class="s k11">Saber mais</p><i class="ic k12" data-i="icon-ar"></i></div></div></div></div><div class="k15"><div class="kz"><div class="kx"><p class="xs k0">Logo</p></div><div class="kz"><div class="ky"><h4 class="h4 k5">Projeto AQUAFISH0.0</h4></div></div><div class="k10"><p class="s"><b>Programa</b></p><p class="s k5">Interreg Atlântica Área 2021-2027</p></div><div class="k14"><div class="k13"><p class="s k11">Saber mais</p><i class="ic k12" data-i="icon-ar"></i></div></div></div></div></div></div><div data-n="CTA Block" class="k1d rv"><div class="k1a"><div class="k18"><div class="k17"><p class="s k11"><b>Investigadores</b></p></div><div class="k17"><p class="s k11"><b>Empresas</b></p></div><div class="k17"><p class="s k11"><b>Escolas</b></p></div><div class="k17"><p class="s k11"><b>Entidades públicas</b></p></div><div class="k17"><p class="s k11"><b>Cidadãos</b></p></div></div><p class="h1 k19"><b>Feita para quem investiga, inova e ensina.</b></p></div><div class="k1c"><p class="xl k11">Venha conhecer a <b>ARDITI</b></p><div class="k1b"><div class="k2"><p class="m k11"><b>Book a call with us</b></p><p class="s k11">→</p></div></div></div></div><div data-include="footer"></div></div>
+</main>
+<script src="pages.js"></script>
+<script src="icons.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agenda · ARDITI (protótipo)</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.k0{color:#a2a2a2}
+.k1{color:#d6d6d6}
+.k2{display:flex;gap:8px;align-items:center}
+.k3{align-self:stretch}
+.k4{background:#f4f4f4;align-self:stretch;display:flex;flex-direction:column;gap:24px;padding:24px 40px 56px 40px;align-items:flex-start;width:100%}
+.k5{opacity:0;background:#3c3c3b;width:56px;max-width:100%;height:2px;flex-shrink:0}
+.k6{display:flex;flex-direction:column;gap:8px;padding:16px 0px 0px 0px;align-items:center}
+.k7{background:#3c3c3b;width:56px;max-width:100%;height:2px;flex-shrink:0}
+.k8{display:flex;gap:72px}
+.k9{background:#f4f4f4;align-self:stretch;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;width:100%;padding:32px max(40px, calc((100% - 1432px) / 2)) 32px max(40px, calc((100% - 1432px) / 2))}
+.ka{flex:0 1 16px;min-width:0;height:16px;width:16px}
+.kb{background:#ffffff;border:1px solid #d6d6d6;border-radius:8px;flex:1 1 0;min-width:0;display:flex;gap:12px;padding:0px 16px 0px 16px;align-items:center;height:48px}
+.kc{background:#ffffff;border:1px solid #3c3c3b;border-radius:8px;flex:0 1 320px;min-width:0;display:flex;padding:0px 16px 0px 16px;justify-content:space-between;align-items:center;height:48px}
+.kd{align-self:stretch;display:flex;gap:16px}
+.ke{align-self:stretch;display:flex;flex-direction:column;gap:16px;align-items:flex-start}
+.kf{position:absolute;left:0px;top:0px;background:#d9d9d9;width:1432px;height:1px}
+.kg{position:absolute;left:0px;top:0px;background:#3c3c3b;width:80px;height:2px}
+.kh{align-self:stretch;position:relative;height:2px;flex-shrink:0}
+.ki{width:365px;max-width:100%;text-transform:uppercase}
+.kj{width:128px;max-width:100%;display:flex;gap:8px;padding:0px 8px 0px 8px;align-items:center;flex:1 1 0}
+.kk{flex:0 1 461px;min-width:0;display:flex;flex-direction:column;gap:16px;justify-content:center;align-items:flex-start;height:600px}
+.kl{text-align:center}
+.km{width:96px;max-width:100%;display:flex;flex-direction:column;align-items:center}
+.kn{display:flex;gap:8px;padding:4px 0px 4px 0px;justify-content:center;align-items:center}
+.ko{border:1px solid #3c3c3b;border-radius:32px;display:flex;flex-direction:column;gap:8px;padding:0px 16px 0px 16px;align-items:flex-start}
+.kp{align-self:stretch;display:flex;gap:4px;flex-wrap:wrap;row-gap:4px;column-gap:4px}
+.kq{align-self:stretch;display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+.kr{flex:0 1 24px;min-width:0;height:24px;width:24px}
+.ks{display:flex;gap:4px;align-items:center}
+.kt{background:#3c3c3b;border-radius:50%;flex:0 1 4px;min-width:0;height:4px}
+.ku{width:403px;max-width:100%;display:flex;gap:16px;align-items:center;height:24px;flex-shrink:0}
+.kv{border:1px solid #3c3c3b;border-radius:32px;flex:1 1 0;min-width:0;display:flex;gap:8px;padding:12px 32px 12px 32px;justify-content:center;align-items:center;height:44px}
+.kw{color:#ffffff}
+.kx{background:#3c3c3b;border-radius:32px;flex:1 1 0;min-width:0;display:flex;gap:4px;padding:12px 32px 12px 32px;justify-content:center;align-items:center}
+.ky{align-self:stretch;display:flex;flex-direction:column;gap:32px;align-items:flex-start}
+.kz{background:#e7e7e7;border-radius:8px;align-self:stretch;display:flex;flex-direction:column;padding:16px 16px 16px 16px;justify-content:space-between;align-items:flex-start;flex:1 1 0}
+.k10{background:#ffffff;border:1px solid #3c3c3b;border-radius:16px;flex:0 0 calc((100% - 24px) / 2);min-width:0;display:flex;flex-direction:column;gap:24px;padding:8px 8px 8px 8px;align-items:flex-start;height:600px;overflow:hidden}
+.k11{flex:1 1 0;min-width:0;display:flex;gap:24px;flex-wrap:wrap;row-gap:24px;column-gap:24px}
+.k12{align-self:stretch;display:flex;gap:24px}
+.k13{flex:0 0 calc((100% - 48px) / 3);min-width:0;display:flex;flex-direction:column;gap:16px;justify-content:center;align-items:flex-start;height:600px}
+.k14{align-self:stretch;display:flex;gap:24px;flex-wrap:wrap;row-gap:24px;column-gap:24px}
+.k15{align-self:stretch;display:flex;flex-direction:column;gap:88px;align-items:flex-start}
+.k16{align-self:stretch;display:flex;flex-direction:column;gap:32px;align-items:flex-start;width:100%;padding:64px max(40px, calc((100% - 1432px) / 2)) 64px max(40px, calc((100% - 1432px) / 2))}
+.k17{border:1px solid #ffffff;border-radius:32px;display:flex;padding:6px 16px 6px 16px}
+.k18{display:flex;gap:8px;flex-wrap:wrap;row-gap:8px;column-gap:8px}
+.k19{align-self:stretch;text-align:center;color:#ffffff}
+.k1a{align-self:stretch;display:flex;flex-direction:column;gap:16px;align-items:center;height:256px;flex-shrink:0}
+.k1b{border:1px solid #ffffff;border-radius:8px;display:flex;flex-direction:column;gap:8px;padding:16px 24px 16px 24px;align-items:flex-start}
+.k1c{align-self:stretch;display:flex;flex-direction:column;gap:16px;align-items:center;height:138px;flex-shrink:0}
+.k1d{background:#3c3c3b;align-self:stretch;display:flex;flex-direction:column;gap:48px;align-items:center;width:100%;padding:96px max(40px, calc((100% - 1432px) / 2)) 96px max(40px, calc((100% - 1432px) / 2))}
+.k1e{background:#ffffff;width:100%;display:flex;flex-direction:column;align-items:flex-start;overflow:hidden}
+</style>
+</head>
+<body data-page="agenda" data-base="agenda">
+<main class="page">
+<div data-n="Notícias e Eventos — Agenda (desktop)" class="k1e"><div data-include="header"></div><div data-n="cabeçalho de página" class="k4 hero"><div class="k2"><p class="xs k0">Início</p><p class="xs k1">/</p><p class="xs k0">Notícias e Eventos</p><p class="xs k1">/</p><p class="xs"><b>Agenda</b></p></div><h1 class="h1 k3">Agenda</h1></div><div data-n="navegação da secção" class="k9 rv tabs"><div class="k8"><div class="k6"><p class="m k3">Notícias</p><div class="k5"></div></div><div class="k6"><p class="m k3"><b>Agenda</b></p><div class="k7"></div></div><div class="k6"><p class="m k3">Newsletters</p><div class="k5"></div></div></div></div><div data-n="listagem" class="k16 rv"><div class="ke"><div class="kd"><div class="kb"><i class="ic ka" data-i="icon-search"></i><p class="s k0">Pesquisar eventos</p></div><div class="kc"><p class="s">Mês</p><i class="ic ka" data-i="icon-cd"></i></div><div class="kc"><p class="s">Ano</p><i class="ic ka" data-i="icon-cd"></i></div></div><p class="m">30 eventos</p></div><div class="k15"><div class="ky"><div class="kh"><div class="kf"></div><div class="kg"></div></div><div class="k12"><div class="kk"><p class="h1 ki"><b>Julho 2026</b></p><div class="kj"></div></div><div class="k11"><div class="k10"><div class="kz"><div class="km"><h1 class="h1 kl">23</h1><p class="s kl"><b>JUL</b></p></div><div class="ky"><div class="kq"><div class="kq"><div class="kp"><div class="ko"><div class="kn"><p class="s"><b>Tag</b></p></div></div></div><h4 class="h4 k3">Título do evento</h4></div><div class="ku"><div class="ks"><i class="ic kr" data-i="geo-alt"></i><p class="s">Gran Canaria</p></div><div class="kt"></div><div class="ks"><p class="s">Hibrído</p></div></div></div><div class="kd"><div class="kv"><p class="s"><b>Ver evento</b></p></div><div class="kx"><p class="s kw"><b>Inscrições</b></p><i class="ic ka" data-i="icon-ar"></i></div></div></div></div></div><div class="k10"><div class="kz"><div class="km"><h1 class="h1 kl">16</h1><p class="s kl"><b>JUL</b></p></div><div class="ky"><div class="kq"><div class="kq"><div class="kp"><div class="ko"><div class="kn"><p class="s"><b>Tag</b></p></div></div></div><h4 class="h4 k3">Título do evento</h4></div><div class="ku"><div class="ks"><i class="ic kr" data-i="geo-alt"></i><p class="s">Gran Canaria</p></div><div class="kt"></div><div class="ks"><p class="s">Hibrído</p></div></div></div><div class="kd"><div class="kv"><p class="s"><b>Ver evento</b></p></div><div class="kx"><p class="s kw"><b>Inscrições</b></p><i class="ic ka" data-i="icon-ar"></i></div></div></div></div></div><div class="k10"><div class="kz"><div class="km"><h1 class="h1 kl">02</h1><p class="s kl"><b>JUL</b></p></div><div class="ky"><div class="kq"><div class="kq"><div class="kp"><div class="ko"><div class="kn"><p class="s"><b>Tag</b></p></div></div></div><h4 class="h4 k3">Título do evento</h4></div><div class="ku"><div class="ks"><i class="ic kr" data-i="geo-alt"></i><p class="s">Gran Canaria</p></div><div class="kt"></div><div class="ks"><p class="s">Hibrído</p></div></div></div><div class="kd"><div class="kv"><p class="s"><b>Ver evento</b></p></div><div class="kx"><p class="s kw"><b>Inscrições</b></p><i class="ic ka" data-i="icon-ar"></i></div></div></div></div></div></div></div></div><div class="ky"><div class="kh"><div class="kf"></div><div class="kg"></div></div><div class="k14"><div class="k13"><p class="h1 ki"><b>JuNho 2026</b></p><div class="kj"></div></div><div class="k11"><div class="k10"><div class="kz"><div class="km"><h1 class="h1 kl">17</h1><p class="s kl"><b>JUN</b></p></div><div class="ky"><div class="kq"><div class="kq"><div class="kp"><div class="ko"><div class="kn"><p class="s"><b>Tag</b></p></div></div></div><h4 class="h4 k3">Evento de lançamento do projeto InnoVamos</h4></div><div class="ku"><div class="ks"><i class="ic kr" data-i="geo-alt"></i><p class="s">Gran Canaria</p></div><div class="kt"></div><div class="ks"><p class="s">Hibrído</p></div></div></div><div class="kd"><div class="kv"><p class="s"><b>Ver evento</b></p></div><div class="kx"><p class="s kw"><b>Inscrições</b></p><i class="ic ka" data-i="icon-ar"></i></div></div></div></div></div></div></div></div><div class="ky"><div class="kh"><div class="kf"></div><div class="kg"></div></div><div class="k14"><div class="k13"><p class="h1 ki"><b>Maio 2026</b></p><div class="kj"></div></div><div class="k11"><div class="k10"><div class="kz"><div class="km"><h1 class="h1 kl">17</h1><p class="s kl"><b>JUN</b></p></div><div class="ky"><div class="kq"><div class="kq"><div class="kp"><div class="ko"><div class="kn"><p class="s"><b>Tag</b></p></div></div></div><h4 class="h4 k3">Título do evento</h4></div><div class="ku"><div class="ks"><i class="ic kr" data-i="geo-alt"></i><p class="s">Local</p></div><div class="kt"></div><div class="ks"><p class="s">Hibrído</p></div></div></div><div class="kd"><div class="kv"><p class="s"><b>Ver evento</b></p></div><div class="kx"><p class="s kw"><b>Inscrições</b></p><i class="ic ka" data-i="icon-ar"></i></div></div></div></div></div></div></div></div></div></div><div data-n="CTA Block" class="k1d rv"><div class="k1a"><div class="k18"><div class="k17"><p class="s kw"><b>Investigadores</b></p></div><div class="k17"><p class="s kw"><b>Empresas</b></p></div><div class="k17"><p class="s kw"><b>Escolas</b></p></div><div class="k17"><p class="s kw"><b>Entidades públicas</b></p></div><div class="k17"><p class="s kw"><b>Cidadãos</b></p></div></div><p class="h1 k19"><b>Feita para quem investiga, inova e ensina.</b></p></div><div class="k1c"><p class="xl kw">Venha conhecer a <b>ARDITI</b></p><div class="k1b"><div class="k2"><p class="m kw"><b>Book a call with us</b></p><p class="s kw">→</p></div></div></div></div><div data-include="footer"></div></div>
+</main>
+<script src="pages.js"></script>
+<script src="icons.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
